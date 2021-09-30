@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết Blog</title>
+  <link rel="stylesheet" href="../CSS/style-03.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo__name">
+          <p>Dang Thu Huyen</p>
+        </div>
+        <!-- <div class="logo__icon">
+          <img src="../../IMG/logo.PNG" alt="">
+        </div> -->
+      </div>
+      <div class="categories">
+        <div class="categories__menu">
+          <ul class="menu">
+            <li><a href="./homepage.html" onclick="toggleMenu();">Trang chủ</a></li>
+            <li class="item_02">
+              <a href="#blog">Blog</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Kỹ năng tương lai</a></li>
+                <li><a href="">Phát triển bản thân</a></li>
+                <li><a href="">Kinh doanh và Tech</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Cuộc sống hạnh phúc</a></li>
+                <li><a href="">Thơ & Tản văn</a></li>
+                <li><a href="">Phỏng vấn báo chí</a></li>
+              </ul>
+            </li>
+            <li class="item_02">
+              <a href="#post" onclick="toggleMenu();">Podcast</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Câu chuyện kinh doanh</a></li>
+                <li><a href="">Khởi nghiệp</a></li>
+                <li><a href="">Kinh doanh và Tech</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Cuộc sống hạnh phúc</a></li>
+                <li><a href="">Thơ & Tản văn</a></li>
+                <li><a href="">Phỏng vấn báo chí</a></li>
+              </ul>
+            </li>
+            <li class="item_02">
+              <a href="" onclick="toggleMenu();">Thư viện</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Group cộng đồng</a></li>
+                <li><a href="">Đăng ký thành viên</a></li>
+                <li><a href="">Thư viện cộng đồng</a></li>
+                <li><a href="">Liên hệ</a></li>
+              </ul>
+            </li>
+            <li><a href="" onclick="toggleMenu();">Sách</a></li>
+            <li class="item_05"><a href="" onclick="toggleMenu();">Khóa học</a></li>
+          </ul>
+        </div>
+        <div class="contact__icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+        <div class="categories__notification">
+          <a href="" title="Thông báo"><i class="fas fa-bell"></i></a>
+          <span>40</span>
+          <!-- <img src="../../IMG/Firefox-logo.png" style="width: 30px; height: 30px; position: absolute;
+            margin-left: 30px;
+          " alt="Tài khoản" title="Tài khoản"> -->
+        </div>
+        <div class="categories__login">
+          <div class="login__icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <button>Login</button>
+        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
+      </div>
+    </header>
+
+    <!-- Share post -->
+    <div class="share__post">
+      <div class="share__content">
+        <div class="flex">
+          <div class="share__title">Chia sẻ bài đăng</div>
+          <div class="share__icon">
+            <img src="../../IMG/facebook-logo.png" alt="">
+            <img src="../../IMG/twitter-logo.png" alt="">
+            <img src="../../IMG/instagram-logo.png" alt="">
+            <img src="../../IMG/link-logo.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="close__share">
+        <img src="../../IMG/close.png" alt="" onclick="closeShare()">
+      </div>
+    </div>
+    <!-- Tablist -->
+    <div class="tablist">
+      <div class="item__list">
+        <ul>
+          <li><a href="">All Posts</a></li>
+          <li><a href="">Ký năng tương lai</a></li>
+          <li><a href="">Phát triển bản thân</a></li>
+          <li style="font-weight: 600;">
+            Khác
+            <i class="fas fa-chevron-down" style="font-size: 12px;"></i>
+            <ul class="more__menu">
+              <li><a href="">Cuộc sống & hạnh phúc</a></li>
+              <li><a href="">Thơ & tản văn</a></li>
+              <li><a href="">Travel</a></li>
+              <li><a href="">Phỏng vấn & báo chí</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="item__custom">
+        <div class="search__item">
+          <i class="fas fa-search search"></i>
+          <input class="inputSearch" type="text" placeholder="Search...">
+          <i class="fas fa-times close"></i>
+        </div>
+        <div class="loginout__item">
+          <button>Đăng nhập / Đăng ký</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="blog">
+      <div class="blog_item">
+        <div class="blog__info">
+          <div class="info">
+            <div class="info__ava">
+              <img src="../../IMG/logo_vn.png" alt="">
+            </div>
+            <div class="info__text">
+              <h4>Dang Thu Huyen</h4>
+              <p></p>
+            </div>
+            <div style="position: relative; top: -1px; left: 5px; font-size: 10px; cursor: pointer;">
+              <i class="fas fa-crown" title="Quản trị viên"></i>
+            </div>
+            <span class="realtime">4 giờ trước</span>
+          </div>
+          <div class="dots">
+            <i class="fas fa-ellipsis-v dot"></i>
+            <span class="share" id="share">
+              <i class="fas fa-share" style="margin-right: 10px;"></i>Chia sẻ bài đăng
+            </span>
+          </div>
+        </div>
+        <div class="blog__title">
+          Nếu bạn không học cách chấp nhận mình, ai sẽ chấp nhận bạn?
+        </div>
+        <div class="blog__img">
+          <div class="img__block">
+            <img src="../../IMG/book_04.jpg" alt="" class="block">
+          </div>
+          <div class="img__none">
+            <div class="flex">
+              <img src="../../IMG/book_04.jpg" alt="">
+              <img src="../../IMG/close.png" alt="" class="closeimg">
+            </div>
+          </div>
+        </div>
+        <div class="blog__content">
+          <p>
+            Do what you love - Làm công việc mình thích đương nhiên là câu thần chú mà ai cũng mong muốn thành hiện
+            thực. Nhưng trên thực tế thì rất nhiều người cảm thấy bất lực vì hoàn cảnh mà không với tới job mình yêu
+            thích được.
+          </p>
+          <span>
+            Trong podcast này, Phi Vân sẽ chia sẻ 3 câu hỏi phản tư giúp các bạn xây dựng được bản đồ hành trình đi
+            đến với công việc mà bạn yêu thích no matter what - dù hoàn cảnh cuộc đời bạn có ra sao.
+          </span>
+        </div>
+        <div class="blog__mp3">
+          <!-- Controls -->
+          <div class="play__blog">
+            <img src="../../IMG/dangthuhuyen_blog.jpg" alt="admin">
+            <i class="fas fa-play-circle" id="play" title="Play"></i>
+          </div>
+          <div class="mp3__info">
+            <div style="height: 93px; margin-left: 15px;">
+              <div class="mp3__title">
+                Nếu bạn không chấp nhận bản thân mình, ai sẽ chấp nhận bạn?
+              </div>
+              <p class="admin__podcast">
+                Dang Thu Huyen's Podcast
+              </p>
+              <a href=""><i class="fas fa-share-alt-square"></i></a>
+            </div>
+            <audio src="../../AUDIO/ThangNam.mp3"></audio>
+            <div>
+              <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            </div>
+          </div>
+        </div>
+        <div class="blog__des">
+          <div class="text__des">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint harum odio at minima provident
+              voluptatibus,
+              illo rem eius! Atque voluptates nulla beatae, corporis aperiam nisi est officia possimus. Laudantium,
+              unde?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae pariatur voluptatibus doloremque,
+              rem
+              tenetur voluptatem! Corporis libero necessitatibus modi perferendis fugiat iste adipisci perspiciatis
+              dolores aut! Aperiam magnam esse minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+              rerum
+              sint reiciendis quod ut eius, sequi mollitia animi nihil pariatur officia cupiditate voluptatum neque
+              aperiam deserunt! Ipsa ut voluptatem magni.
+            </p>
+            <br>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint harum odio at minima provident
+              voluptatibus,
+              illo rem eius! Atque voluptates nulla beatae, corporis aperiam nisi est officia possimus. Laudantium,
+              unde?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae pariatur voluptatibus doloremque,
+              rem
+              tenetur voluptatem! Corporis libero necessitatibus modi perferendis fugiat iste adipisci perspiciatis
+              dolores aut! Aperiam magnam esse minima?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+              rerum
+              sint reiciendis quod ut eius, sequi mollitia animi nihil pariatur officia cupiditate voluptatum neque
+              aperiam deserunt! Ipsa ut voluptatem magni.
+            </p>
+          </div>
+        </div>
+        <div class="blog__share">
+          <div class="icon__share">
+            <ul>
+              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href=""><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fas fa-link"></i></a></li>
+            </ul>
+          </div>
+          <div class="share__text">
+            <a href="">Phát triển bản thân</a>
+          </div>
+        </div>
+        <div class="blog__view">
+          <div class="view">1007 <span>lượt xem</span></div>
+          <div class="like">
+            <span>36</span>
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blogCurent_Title">
+      <div class="title">
+        Bài đăng gần đây
+      </div>
+      <div class="view__all">
+        <a href="blog.html">Xem tất cả</a>
+      </div>
+    </div>
+
+    <div class="post__item">
+      <div class="item__post">
+        <div class="item__img">
+          <img
+            src="https://static.wixstatic.com/media/e60689a35872427a8d22f9e341dd1d34.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90/e60689a35872427a8d22f9e341dd1d34.webp"
+            alt="">
+        </div>
+        <div class="item__title">
+          <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+        </div>
+        <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+        <div class="item__icon">
+          <i class="far fa-eye"> 999</i>
+          <i class="far fa-heart"> 99</i>
+        </div>
+      </div>
+      <div class="item__post">
+        <div class="item__img">
+          <img
+            src="https://static.wixstatic.com/media/e60689a35872427a8d22f9e341dd1d34.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90/e60689a35872427a8d22f9e341dd1d34.webp"
+            alt="">
+        </div>
+        <div class="item__title">
+          <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+        </div>
+        <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+        <div class="item__icon">
+          <i class="far fa-eye"> 999</i>
+          <i class="far fa-heart"> 99</i>
+        </div>
+      </div>
+      <div class="item__post">
+        <div class="item__img">
+          <img
+            src="https://static.wixstatic.com/media/e60689a35872427a8d22f9e341dd1d34.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90/e60689a35872427a8d22f9e341dd1d34.webp"
+            alt="">
+        </div>
+        <div class="item__title">
+          <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+        </div>
+        <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+        <div class="item__icon">
+          <i class="far fa-eye"> 999</i>
+          <i class="far fa-heart"> 99</i>
+        </div>
+      </div>
+    </div>
+    <div class="blog__podcast">
+      <iframe src="https://open.spotify.com/embed/episode/68AwQVcBJLITxpyRyzHO0H?theme=0" 
+        width="100%" height="232"
+        frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+    <div class="footer">
+      <div class="footer__content">
+        <div class="contact__ft">
+          <h3>Hãy nhập vào email để phản hồi</h3>
+          <input type="text" placeholder="example@gmail.com">
+          <div>
+            <button>Subcribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright__footer">
+        <p>@CopyRight 2021 by - DANG THU HUYEN</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../JS/main-03.js"></script>
+
+</html>

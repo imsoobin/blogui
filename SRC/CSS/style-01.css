@@ -1,0 +1,720 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: 'Questrial', sans-serif;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+}
+
+/* Container */
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+/* Header */
+/* 
+header.sticky {
+  background: #505050;
+  padding: 20px 100px;
+  transition: 0.5s;
+  z-index: 20;
+} */
+
+header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  background-color: #161e2a;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  align-items: center;
+  position: fixed;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.logo .logo__icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.logo .logo__name p {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+}
+
+.container .categories {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categories .categories__menu ul {
+  text-transform: uppercase;
+}
+
+.categories__menu ul li {
+  margin-right: 20px;
+  float: left;
+  color: #fff;
+  position: relative;
+}
+
+.categories__menu ul li>ul {
+  display: none;
+  position: absolute;
+  width: 170px;
+  height: auto;
+  padding: 35px 10px 10px 10px;
+  left: -40px;
+  background-color: #161e2a;
+  animation: opacity 0.5s ease-in-out;
+  z-index: 1;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.categories__menu ul li ul li {
+  margin: 4px 0 10px 0;
+}
+
+.categories__menu ul li>ul li a {
+  font-size: 14px;
+  text-transform: none;
+}
+
+.categories__menu ul li:hover ul {
+  display: block;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.categories__menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.item_02 span i {
+  font-size: 10px;
+}
+
+.categories__menu ul li a:hover {
+  color: rgba(179, 73, 250, 0.7);
+}
+
+.categories__menu ul .item_05 {
+  z-index: 2;
+}
+
+.categories__menu ul .item_05 a {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.categories__menu ul .item_05 a:hover {
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.categories .categories__login {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.categories__login .login__icon i {
+  font-size: 17px;
+  color: #fff;
+}
+
+.categories__login button {
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 13px;
+  color: #fff;
+}
+
+.categories__login button:hover {
+  color: #adadad;
+  cursor: pointer;
+}
+
+.contact__icon {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+}
+
+.contact__icon i {
+  font-size: 17px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.categories__notification {
+  margin-left: 20px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categories__notification i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.categories__notification span {
+  position: relative;
+  background-color: blue;
+  font-size: 10px;
+  padding: 1px 3px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  top: -10px;
+  left: -35px;
+}
+
+/* Banner */
+
+.banner {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  background-color: #e8edf1;
+  align-items: center;
+  position: relative;
+  margin-top: 90px;
+}
+
+.banner__content {
+  width: 650px;
+}
+
+.banner__content h1 {
+  text-transform: uppercase;
+  position: relative;
+  top: -30px;
+  font-size: 24px;
+}
+
+.banner__content p {
+  text-align: justify;
+}
+.banner__content p span{
+  display: block;
+  margin: 5px 0;
+}
+.banner__img img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.banner__text {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #111;
+  font-weight: 600;
+}
+
+/* Title */
+
+.title {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #505050; */
+  background: url('../../IMG/books.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title__content {
+  text-align: center;
+  color: #fff;
+}
+
+.title__content h3 {
+  font-size: 45px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title__content p {
+  margin-top: 25px;
+  font-size: 17px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Content */
+
+.content {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* padding: 20px 0 20px 0; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #323232;
+}
+
+.content .content__item {
+  width: 300px;
+  margin: 5px;
+}
+
+.content .content__item img {
+  width: 100%;
+  height: 500px;
+}
+
+.content__item:hover img {
+  opacity: 0.6;
+}
+
+/* Listpost */
+
+.listpost {
+  width: 100%;
+  height: auto;
+}
+
+.post__title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.post__title h3 {
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.list__item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 0 100px;
+  justify-content: center;
+}
+
+.listpost__content {
+  width: auto;
+  height: 450px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+}
+
+.listpost__content ul {
+  position: relative;
+}
+
+.listpost__content ul li {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listpost__content ul li:hover {
+  background-color: #adadad;
+}
+
+.listpost__content ul li a, .listpost__content ul li span {
+  color: #111;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.post__item {
+  width: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.item__post {
+  margin: 0 0 20px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  height: auto;
+  width: 293px;
+}
+
+.item__post .item__img img {
+  width: 291px;
+  height: 220px;
+  cursor: pointer;
+}
+
+.item__post .item__info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px 20px 0px 20px;
+}
+
+.item__info .info__ava {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.item__info .info__text {
+  opacity: 0.8;
+}
+.realtime{font-size: 12px;}
+
+.info__ava img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.item__title {
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px 0 20px;
+  height: 55px;
+}
+
+.item__title:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.item__icon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.item__icon i {
+  font-size: 16px;
+  color: teal;
+  padding: 0 20px;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination span {
+  float: left;
+  padding: 12px 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* thiết lập style cho class active */
+
+.actives {
+  background-color: dodgerblue;
+  border-radius: 50%;
+  color: #fff;
+}
+
+/* thêm màu nền khi người dùng hover vào class không active */
+
+.pagination span:hover:not(.active) {
+  background-color: #ddd;
+  /*Thiết kế hình tròn với CSS*/
+  border-radius: 50%;
+}
+
+.listen {
+  margin-top: 50px;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.text__contact {
+  text-align: center;
+  margin: 0 0 20px 0px;
+}
+
+.text__contact h2 {
+  opacity: 0.9;
+  margin-bottom: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo__contact {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.logo__contact img {
+  width: 160px;
+  height: 80px;
+  margin: 0 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 300px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  background-color: #404040;
+  height: 270px;
+}
+
+.contact__ft {
+  text-align: center;
+}
+
+.contact__ft h3 {
+  color: #fff;
+  position: relative;
+  top: -30px;
+  font-size: 20px;
+}
+
+.contact__ft input {
+  padding: 10px 30px;
+  width: 400px;
+  background: none;
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact__ft input::placeholder {
+  color: #fff;
+}
+
+.contact__ft button {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  position: relative;
+  top: 10px;
+  opacity: 0.9;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.copyright__footer {
+  text-align: center;
+  background-color: #111;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+  header, header.sticky {
+    padding: 20px 40px;
+    z-index: 100;
+  }
+  .logo__name {
+    display: none;
+  }
+  .categories__menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 50px;
+    left: -100%;
+    background: #161e2a;
+    transition: 0.5s;
+    z-index: 200;
+    border-radius: 0;
+    transition: 0.5s;
+    top: 90px;
+    display: block;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .toggle {
+    background: url('../../IMG/menu.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 20;
+    margin-left: 20px;
+  }
+  .toggle.active {
+    background: url('../../IMG/close.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 28px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  .categories__menu.active {
+    left: 0;
+    transition: 0.5s;
+  }
+  .categories__menu ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+  }
+  .categories__menu ul li{
+    margin: 10px 0 25px 0;
+  }
+  .categories__menu ul li:hover ul{display: none;}
+  .categories__menu ul li span{display: none;}
+  .banner{
+    padding: 40px 40px;
+  }
+  .banner__content{
+    width: 350px;
+  }
+  .banner__img img{
+    width: 350px;
+    height: 250px;
+  }
+  .content{
+    grid-template-columns: auto auto;
+  }
+  .content .content__item{
+    margin: 15px;
+  }
+  .title__content h3{
+    font-size: 38px;
+  }
+  .post__item{
+    grid-template-columns: auto;
+  }
+  .listen{
+    padding: 0px 50px;
+  }
+  .logo__contact{margin: -10px;}
+  .logo__contact img{
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  header, header.sticky {
+    padding: 30px 30px;
+    z-index: 100;
+  }
+  .banner__content{
+    width: 280px;
+  }
+  .banner__content h2{
+    font-size: 14px;
+    margin: -10px;
+  }
+  .banner__content p{
+    font-size: 14px;
+    margin: -10px;
+  }
+  .banner__img img{
+    width: 250px;
+    height: 200px;
+  }
+  .post__title h3{font-size: 30px;}
+}
+
+@media (max-width: 500px) {
+  header, header.sticky {
+    padding: 25px 25px;
+    z-index: 100;
+  }
+  .banner__content{
+    width: auto;
+  }
+  .banner__content h2{
+    font-size: 14px;
+    margin: -10px;
+  }
+  .banner__content p{
+    font-size: 14px;
+    margin: -10px;
+  }
+  .banner__img{
+    display: none;
+  }
+  .content{
+    grid-template-columns: auto;
+  }
+  .post__title h3{
+    font-size: 25px;
+  }
+  .listpost__content{display: none;}
+  .text__contact h2{font-size: 15px;}
+  .text__contact p{font-size: 13px;}
+  .contact_png{
+    margin: 0 -50px;
+  }
+  .contact__ft h3{font-size: 15px;}
+}

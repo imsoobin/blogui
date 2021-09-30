@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ blog</title>
+  <link rel="stylesheet" href="../CSS/style-01.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <div class="logo__name">
+          <p>Dang Thu Huyen</p>
+        </div>
+        <!-- <div class="logo__icon">
+          <img src="../../IMG/logo.PNG" alt="">
+        </div> -->
+      </div>
+      <div class="categories">
+        <div class="categories__menu">
+          <ul class="menu">
+            <li><a href="" onclick="toggleMenu();">Trang chủ</a></li>
+            <li class="item_02">
+              <a href="./blog.html">Blog</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Kỹ năng tương lai</a></li>
+                <li><a href="">Phát triển bản thân</a></li>
+                <li><a href="">Kinh doanh và Tech</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Cuộc sống hạnh phúc</a></li>
+                <li><a href="">Thơ & Tản văn</a></li>
+                <li><a href="">Phỏng vấn báo chí</a></li>
+              </ul>
+            </li>
+            <li class="item_02">
+              <a href="#post" onclick="toggleMenu();">Podcast</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Câu chuyện kinh doanh</a></li>
+                <li><a href="">Khởi nghiệp</a></li>
+                <li><a href="">Kinh doanh và Tech</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Cuộc sống hạnh phúc</a></li>
+                <li><a href="">Thơ & Tản văn</a></li>
+                <li><a href="">Phỏng vấn báo chí</a></li>
+              </ul>
+            </li>
+            <li class="item_02">
+              <a href="" onclick="toggleMenu();">Thư viện</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Group cộng đồng</a></li>
+                <li><a href="">Đăng ký thành viên</a></li>
+                <li><a href="">Thư viện cộng đồng</a></li>
+                <li><a href="">Liên hệ</a></li>
+              </ul>
+            </li>
+            <li><a href="#books" onclick="toggleMenu();">Sách</a></li>
+            <li class="item_05"><a href="" onclick="toggleMenu();">Khóa học</a></li>
+          </ul>
+        </div>
+        <div class="contact__icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+        <div class="categories__notification">
+          <a href="" title="Thông báo"><i class="fas fa-bell"></i></a>
+          <span>40</span>
+          <!-- <img src="../../IMG/Firefox-logo.png" style="width: 30px; height: 30px; position: absolute;
+            margin-left: 30px;
+          " alt="Tài khoản" title="Tài khoản"> -->
+        </div>
+        <div class="categories__login">
+          <div class="login__icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <button>Login</button>
+        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
+      </div>
+    </header>
+    <!-- Banner -->
+    <div class="banner" id="blog">
+      <div class="banner__content">
+        <h1>Giới thiệu</h1>
+        <p>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fugiat doloribus debitis</span>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fugiat doloribus debitis</span>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fugiat doloribus debitis</span>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat fugiat doloribus debitis</span>
+          <span>Lorem ipsum dolor, <a href="">Tại đây</a></span>
+        </p>
+      </div>
+      <div class="banner__img">
+        <img src="../../IMG/bussiness.jpg" alt="" />
+      </div>
+    </div>
+    <!-- Title -->
+    <div class="title img">
+      <div class="title__content">
+        <h3>Published Books - Sách Đã Xuất Bản</h3>
+        <span>______</span>
+        <p>Tiếng Anh & Việt</p>
+      </div>
+    </div>
+    <!-- Content -->
+    <div class="content" id="books">
+      <div class="content__item">
+        <div class="item__img">
+          <a href=""><img src="../../IMG/book_01.jpg" alt=""></a>
+        </div>
+        <!-- <div class="item__icon">
+          <i class="far fa-heart"></i>
+          <i class="fas fa-download"></i>
+        </div> -->
+      </div>
+      <div class="content__item">
+        <div class="item__img">
+          <a href=""><img src="../../IMG/book_02.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="content__item">
+        <div class="item__img">
+          <a href=""><img src="../../IMG/book_03.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="content__item">
+        <div class="item__img">
+          <a href=""><img src="../../IMG/book_04.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="content__item">
+        <div class="item__img">
+          <a href=""> <img src="../../IMG/book_05.jpg" alt=""></a>
+        </div>
+      </div>
+      <div class="content__item">
+        <div class="item__img">
+          <img src="../../IMG/book_05.jpg" alt="">
+        </div>
+      </div>
+      <div class="content__item">
+        <div class="item__img">
+          <img src="../../IMG/book_05.jpg" alt="">
+        </div>
+      </div>
+      <div class="content__item">
+        <div class="item__img">
+          <a href=""><img src="../../IMG/book_02.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <!-- Listpost -->
+    <div class="listpost" id="post">
+      <div class="post__title">
+        <h3>Recent Posts - Bài Viết Mới Nhất</h3>
+      </div>
+      <div class="list__item">
+        <div class="listpost__content">
+          <ul>
+            <li><a href="">All post</a> <span>(10)</span></li>
+            <li><a href="">Kỹ năng tương lai</a> <span>(10)</span></li>
+            <li><a href="">Phát triển bản thân</a> <span>(10)</span></li>
+            <li><a href="">Kinh doanh & Tech</a> <span>(10)</span></li>
+            <li><a href="">Cuộc sống & hạnh phúc</a> <span>(10)</span></li>
+            <li><a href="">Travel</a> <span>(10)</span></li>
+            <li><a href="">Thơ và tản văn</a> <span>(10)</span></li>
+            <li><a href="">Phỏng vấn & báo chí</a> <span>(10)</span></li>
+            <li><a href="">Đọc báo cặp nhật cùng DTH</a> <span>(10)</span></li>
+          </ul>
+        </div>
+        <div class="post__item">
+          <div class="item__post">
+            <div class="item__img">
+              <img
+                src="https://static.wixstatic.com/media/e60689a35872427a8d22f9e341dd1d34.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90/e60689a35872427a8d22f9e341dd1d34.webp"
+                alt="">
+            </div>
+            <div class="item__info">
+              <div class="info__ava">
+                <img src="../../IMG/logo_vn.png" alt="">
+              </div>
+              <div class="info__text">
+                <h5>Dang Thu Huyen</h5>
+                <p class="realtime">4 giờ trước</p>
+              </div>
+              <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+                <i class="fas fa-crown" title="Quản trị viên"></i>
+              </div>
+            </div>
+            <div class="item__title">
+              <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            </div>
+            <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+            <div class="item__icon">
+              <i class="far fa-eye"> 999</i>
+              <i class="far fa-heart"> 99</i>
+            </div>
+          </div>
+          <div class="item__post">
+            <div class="item__img">
+              <img
+                src="https://static.wixstatic.com/media/nsplsh_724955785f51395f617877~mv2.jpg/v1/fill/w_293,h_219,fp_0.50_0.50,q_90/nsplsh_724955785f51395f617877~mv2.webp"
+                alt="">
+            </div>
+            <div class="item__info">
+              <div class="info__ava">
+                <img src="../../IMG/logo_vn.PNG" alt="">
+              </div>
+              <div class="info__text">
+                <h5>Dang Thu Huyen</h5>
+                <p class="realtime">4 giờ trước</p>
+              </div>
+              <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+                <i class="fas fa-crown" title="Quản trị viên"></i>
+              </div>
+            </div>
+            <div class="item__title">
+              <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            </div>
+            <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+            <div class="item__icon">
+              <i class="far fa-eye"> 999</i>
+              <i class="far fa-heart"> 99</i>
+            </div>
+          </div>
+          <div class="item__post">
+            <div class="item__img">
+              <img
+                src="https://static.wixstatic.com/media/nsplsh_3568766e2d325757367259~mv2_d_4554_3039_s_4_2.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90/nsplsh_3568766e2d325757367259~mv2_d_4554_3039_s_4_2.webp"
+                alt="">
+            </div>
+            <div class="item__info">
+              <div class="info__ava">
+                <img src="../../IMG/logo_vn.PNG" alt="">
+              </div>
+              <div class="info__text">
+                <h5>Dang Thu Huyen</h5>
+                <p class="realtime">4 giờ trước</p>
+              </div>
+              <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+                <i class="fas fa-crown" title="Quản trị viên"></i>
+              </div>
+            </div>
+            <div class="item__title">
+              <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            </div>
+            <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+            <div class="item__icon">
+              <i class="far fa-eye"> 999</i>
+              <i class="far fa-heart"> 99</i>
+            </div>
+          </div>
+          <div class="item__post">
+            <div class="item__img">
+              <img
+                src="https://static.wixstatic.com/media/c2657caab4f347a69fac6f3c63e2858c.jpg/v1/fill/w_293,h_219,fp_0.50_0.50,q_90/c2657caab4f347a69fac6f3c63e2858c.webp"
+                alt="">
+            </div>
+            <div class="item__info">
+              <div class="info__ava">
+                <img src="../../IMG/logo_vn.PNG" alt="">
+              </div>
+              <div class="info__text">
+                <h5>Dang Thu Huyen</h5>
+                <p class="realtime">4 giờ trước</p>
+              </div>
+            </div>
+            <div class="item__title">
+              <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            </div>
+            <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+            <div class="item__icon">
+              <i class="far fa-eye"> 999</i>
+              <i class="far fa-heart"> 99</i>
+            </div>
+          </div>
+          <div class="item__post">
+            <div class="item__img">
+              <img
+                src="https://static.wixstatic.com/media/nsplsh_2f97191f4582464daa9da2941733d46f~mv2.jpg/v1/fill/w_292,h_219,fp_0.50_0.50,q_90/nsplsh_2f97191f4582464daa9da2941733d46f~mv2.webp"
+                alt="">
+            </div>
+            <div class="item__info">
+              <div class="info__ava">
+                <img src="../../IMG/logo_vn.PNG" alt="">
+              </div>
+              <div class="info__text">
+                <h5>Dang Thu Huyen</h5>
+                <p class="realtime">4 giờ trước</p>
+              </div>
+            </div>
+            <div class="item__title">
+              <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            </div>
+            <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+            <div class="item__icon">
+              <i class="far fa-eye"> 999</i>
+              <i class="far fa-heart"> 99</i>
+            </div>
+          </div>
+          <div class="item__post">
+            <div class="item__img">
+              <img
+                src="https://static.wixstatic.com/media/b8fed2_c1b74c8e0be4424484272dc3bbe86e30~mv2.png/v1/fill/w_460,h_375,al_c,q_85/Electrician's%20Supplies.webp"
+                alt="">
+            </div>
+            <div class="item__info">
+              <div class="info__ava">
+                <img src="../../IMG/logo_vn.PNG" alt="">
+              </div>
+              <div class="info__text">
+                <h5>Dang Thu Huyen</h5>
+                <p class="realtime">4 giờ trước</p>
+              </div>
+            </div>
+            <div class="item__title">
+              <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            </div>
+            <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+            <div class="item__icon">
+              <i class="far fa-eye"> 999</i>
+              <i class="far fa-heart"> 99</i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <span class="p">«</span>
+        <span class="p actives">1</span>
+        <span class="p">2</span>
+        <span class="p">3</span>
+        <span class="p">4</span>
+        <span class="p">5</span>
+        <span class="p">6</span>
+        <span class="p">»</span>
+      </div>
+    </div>
+    <div class="listen">
+      <div class="title__contact">
+        <div class="text__contact">
+          <h2>NGHE DANGTHUHUYEN.TV TRÊN CÁC KÊNH PODCAST</h2>
+          <p>Tuy nhiên các anh chị nên xem trên Youtube để có đầy đủ các sơ đồ minh họa</p>
+        </div>
+        <div class="logo__contact">
+          <div class="contact_png">
+            <img src="../../IMG/youtube.PNG" alt="">
+            <img src="../../IMG/spotify.PNG" alt="">
+            <img src="../../IMG/applepodcast.PNG" alt="">
+            <img src="../../IMG/googlepodcast.PNG" alt="">
+            <img src="../../IMG/castbox.PNG" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__content">
+        <div class="contact__ft">
+          <h3>Hãy nhập vào email để phản hồi</h3>
+          <input type="text" placeholder="example@gmail.com">
+          <div>
+            <button>Subcribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright__footer">
+        <p>@CopyRight 2021 by - DANG THU HUYEN</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../JS/main-01.js"></script>
+
+</html>
