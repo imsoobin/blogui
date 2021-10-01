@@ -22,12 +22,12 @@ share.addEventListener('click', () => {
   share.classList.add('active')
 })
 dots.addEventListener('click', function() {
-  share.style.display = 'block'
+  share.classList.toggle('actives')
 })
 //Đóng phần chia sẻ
 function closeShare() {
   sharepost.style.display = 'none'
-  share.style.display = 'none'
+  share.classList.add('active')
 }
 
 // Thu phóng hình ảnh

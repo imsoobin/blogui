@@ -395,6 +395,7 @@ header .logo {
   width: 291px;
   height: 220px;
   cursor: pointer;
+  background-color: darkgray;
 }
 
 .item__post .item__info {

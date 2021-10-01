@@ -385,7 +385,10 @@ header .logo {
   width: 200px;
   display: none;
 }
-
+.share.active{display: none;}
+.share.actives{
+  display: block;
+}
 .share__post {
   width: 100%;
   /* Full width */

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Questrial', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.login {
+  width: 480px;
+  margin: auto;
+  height: auto;
+  background-color: #fff;
+  position: relative;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.login__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.login__title .title_text {
+  font-size: 12px;
+}
+
+.btn_close {
+  padding: 2px;
+  opacity: 0.9;
+}
+
+.btn_close i {
+  font-size: 24px;
+  color: black;
+}
+
+.login__ava {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.login__ava img {
+  width: 85px;
+  height: 85px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+
+.form__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.login .login__input input {
+  height: 35px;
+  padding: 0 10px;
+  width: 430px;
+  outline: none;
+  border: 1px solid rgba(4, 45, 107, 0.3);
+  border-radius: 7px;
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.login__input input::placeholder {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.forget__password {
+  display: flex;
+  justify-content: flex-end;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.btn__login {
+  position: relative;
+  margin: 20px 0 0 0;
+}
+
+.btn__login button {
+  width: 100%;
+  padding: 11px 0;
+  background-color: #0768ea;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login__else {
+  padding: 28px 25px;
+}
+
+.else {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.login__else div span {
+  z-index: 2;
+  background-color: #fff;
+  padding: 5px 10px;
+  opacity: 0.9;
+  font-size: 17px;
+}
+
+.login__btnelse {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.login__btnelse button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 430px;
+  padding: 8px 20px;
+  background-color: rgba(250, 245, 245, 0.7);
+  border: none;
+  margin-bottom: 15px;
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  cursor: pointer;
+}
+.login__btnelse button:last-child{
+  margin-bottom: none;
+}
+.login__btnelse button img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+.sign__in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0 25px 0;
+}
+
+.sign__in a{
+  text-decoration: none;
+}
