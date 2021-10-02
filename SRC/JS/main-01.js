@@ -1,4 +1,4 @@
-// Phân trang cho post
+// Phân trang tĩnh cho post
 var page = document.querySelector('.pagination')
 var pagenation = page.getElementsByClassName('p')
 for (var i = 0; i < pagenation.length; i++) {
@@ -17,3 +17,55 @@ function toggleMenu() {
   open.classList.toggle('active');
 }
 
+
+// let postapi = 'http://localhost:3000/posts'
+// function getPosts(callback) {
+//   fetch(postapi)
+//     .then((response) => {
+//       return response.json()
+//     })
+//     .then(callback)
+// }
+
+// function khoiTao() {
+//   getPosts(renderPosts)
+//   getCategory()
+// }
+// khoiTao();
+
+// function renderPosts(data) {
+//   var htmls = document.getElementById('postItem')
+//   var html = data.map((post) => {
+//     return `
+//     <div class="item__post">
+//     <div class="item__img">
+//       <img src=${post.image} alt="">
+//     </div>
+//     <div class="item__info">
+//       <div class="info__ava">
+//         <img src="../../IMG/logo_vn.png" alt="">
+//       </div>
+//       <div class="info__text">
+//         <h5>${post.user.firstName + ' ' + post.user.lastName}</h5>
+//         <p class="realtime">4 giờ trước</p>
+//       </div>
+//       <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+//         <i class="fas fa-crown" title="Quản trị viên"></i>
+//       </div>
+//     </div>
+//     <div class="item__title">
+//       <h3>${post.title}</h3>
+//     </div>
+//     <div class="item__text">
+//       <p>${post.content}</p>
+//     </div>
+//     <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+//     <div class="item__icon">
+//       <i class="far fa-eye"> 999</i>
+//       <i class="far fa-heart"> 99</i>
+//     </div>
+//   </div>
+//     `
+//   })
+//   htmls.innerHTML = html.join('')
+// }

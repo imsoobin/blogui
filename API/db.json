@@ -1,0 +1,172 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "createdDate": 1632323381000,
+      "modifileDate": 1632323925000,
+      "idUser": 1,
+      "idCategory": null,
+      "user": {
+        "firstName": "Đặng Thu",
+        "lastName": "Huyền"
+      },
+      "title": "COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN",
+      "image": "../../IMG/bussiness.jpg",
+      "audio": null,
+      "content": "Trong podcast này",
+      "numView": 0,
+      "numComment": 0,
+      "numLove": 0,
+      "isLove": false
+    },
+    {
+      "id": 2,
+      "createdDate": null,
+      "modifileDate": 1632560634000,
+      "idUser": 1,
+      "idCategory": null,
+      "user": {
+        "firstName": "Đặng Thu",
+        "lastName": "Huyền"
+      },
+      "title": "TÂM THẾ TRỞ LẠI TỪ LOCKDOWN",
+      "image": "../../IMG/book_02.jpg",
+      "audio": null,
+      "content": "Hiển thị nội dung api",
+      "numView": 0,
+      "numComment": 0,
+      "numLove": null,
+      "isLove": null
+    },
+    {
+      "id": 3,
+      "createdDate": null,
+      "modifileDate": 1632560634000,
+      "idUser": 1,
+      "idCategory": null,
+      "user": {
+        "firstName": "Đặng Thu",
+        "lastName": "Huyền"
+      },
+      "title": "Viết - một kỹ năng quan trọng",
+      "image": "../../IMG/book_02.jpg",
+      "audio": null,
+      "content": "test content",
+      "numView": 0,
+      "numComment": 0,
+      "numLove": null,
+      "isLove": null
+    },
+    {
+      "id": 4,
+      "createdDate": null,
+      "modifileDate": 1632560634000,
+      "idUser": 1,
+      "idCategory": null,
+      "user": {
+        "firstName": "Đặng Thu",
+        "lastName": "Huyền"
+      },
+      "title": "KỸ NĂNG TÌM KIẾM THÔNG TIN LIÊN QUAN",
+      "image": "../../IMG/book_02.jpg",
+      "audio": null,
+      "content": "test content",
+      "numView": 0,
+      "numComment": 0,
+      "numLove": null,
+      "isLove": null
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "createdDate": null,
+      "modifileDate": null,
+      "name": "Trang chủ"
+    },
+    {
+      "id": 2,
+      "createdDate": null,
+      "modifileDate": null,
+      "name": "Blog"
+    },
+    {
+      "id": 3,
+      "createdDate": null,
+      "modifileDate": null,
+      "name": "Podcast"
+    },
+    {
+      "id": 4,
+      "createdDate": null,
+      "modifileDate": null,
+      "name": "Thư viện"
+    },
+    {
+      "id": 5,
+      "createdDate": null,
+      "modifileDate": null,
+      "name": "Sách"
+    },
+    {
+      "id": 6,
+      "createdDate": null,
+      "modifileDate": null,
+      "name": "Khóa học"
+    }
+  ],
+  "categoryblog": [
+    {
+      "id": 1,
+      "createdDate": null,
+      "name": "Kỹ năng tương lai"
+    },
+    {
+      "id": 2,
+      "createdDate": null,
+      "name": "Phát triển bản thân"
+    },
+    {
+      "id": 3,
+      "createdDate": null,
+      "name": "Kinh doanh và Tech"
+    },
+    {
+      "id": 4,
+      "createdDate": null,
+      "name": "Travel"
+    },
+    {
+      "id": 5,
+      "createdDate": null,
+      "name": "Cuộc sống hạnh phúc"
+    },
+    {
+      "id": 6,
+      "createdDate": null,
+      "name": "Phỏng vấn báo chí"
+    }
+  ],
+  "categorypodcast": [
+    {
+      "id": 1,
+      "createdDate": null,
+      "name": "Câu chuyện kinh doanh"
+    },
+    {
+      "id": 2,
+      "createdDate": null,
+      "name": "Khởi nghiệp"
+    },
+    {
+      "id": 3,
+      "createdDate": null,
+      "name": "Kinh doanh và Tech"
+    },
+    {
+      "id": 4,
+      "createdDate": null,
+      "name": "Thơ & Tản văn"
+    }
+  ]
+}
