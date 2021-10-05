@@ -17,6 +17,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 /* Header */
 
 header {
@@ -223,17 +224,15 @@ header .logo {
 
 .banner__title {
   text-align: center;
-  font-size: 35px;
-  margin-bottom: 50px;
+  font-size: 40px;
+  margin-bottom: 40px;
 }
 
 .banner__text {
-  text-align: justify;
+  text-align: center;
   padding: 30px 350px;
-  font-size: 16px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 19px;
+  line-height: 1.7;
 }
 
 .tablist {
@@ -286,8 +285,10 @@ header .logo {
 }
 
 .share__post {
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
   z-index: 50;
   background: rgba(32, 32, 32, 0.8);
   position: fixed;
@@ -318,7 +319,8 @@ header .logo {
     transform: scale(1);
   }
 }
-.share__title{
+
+.share__title {
   font-size: 17px;
   position: relative;
   text-align: center;
@@ -326,15 +328,18 @@ header .logo {
   font-weight: 600;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.share__icon img{
+
+.share__icon img {
   width: 43px;
   height: 44px;
   border-radius: 50%;
   margin: 0 20px 0 20px;
 }
-.share__icon img:last-child{
+
+.share__icon img:last-child {
   padding: 10px;
 }
+
 .close__share img {
   position: absolute;
   top: 10px;
@@ -342,6 +347,7 @@ header .logo {
   cursor: pointer;
   z-index: 100;
 }
+
 .dots:hover .share {
   display: block;
 }
@@ -393,7 +399,11 @@ header .logo {
 }
 
 .item__title p {
+  margin-top: 10px;
   font-size: 14px;
+  width: auto;
+  max-height: 90px;
+  overflow: hidden;
 }
 
 .item__title:hover {
@@ -424,6 +434,7 @@ header .logo {
   cursor: pointer;
   padding: 0 0 0 3px;
 }
+
 .pagination {
   width: 100%;
   display: flex;
@@ -436,6 +447,7 @@ header .logo {
   text-decoration: none;
   cursor: pointer;
 }
+
 .actives {
   background-color: dodgerblue;
   border-radius: 50%;
@@ -449,6 +461,7 @@ header .logo {
   /*Thiết kế hình tròn với CSS*/
   border-radius: 50%;
 }
+
 .fa-comment-alt:hover {
   opacity: 0.6;
   cursor: pointer;
@@ -480,11 +493,13 @@ header .logo {
 .tab-search i {
   cursor: pointer;
 }
-.tab-search .close{
+
+.tab-search .close {
   position: relative;
   left: -20px;
   display: none;
 }
+
 .tab-search input {
   width: 200px;
   height: 30px;

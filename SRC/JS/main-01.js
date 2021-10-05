@@ -17,6 +17,7 @@ function toggleMenu() {
   open.classList.toggle('active');
 }
 
+/* ------------ XỬ LÝ PHẦN FAKE API VÀ CALL HIỂN THỊ RA MÀN HÌNH ----------- */
 
 // let postapi = 'http://localhost:3000/posts'
 // function getPosts(callback) {
@@ -56,9 +57,7 @@ function toggleMenu() {
 //     <div class="item__title">
 //       <h3>${post.title}</h3>
 //     </div>
-//     <div class="item__text">
-//       <p>${post.content}</p>
-//     </div>
+//     
 //     <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
 //     <div class="item__icon">
 //       <i class="far fa-eye"> 999</i>

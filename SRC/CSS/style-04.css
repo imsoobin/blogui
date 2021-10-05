@@ -150,15 +150,18 @@ body {
   border-radius: 7px;
   cursor: pointer;
 }
-.login__btnelse button:last-child{
+
+.login__btnelse button:last-child {
   margin-bottom: none;
 }
+
 .login__btnelse button img {
   width: 25px;
   height: 25px;
   margin-right: 10px;
 }
-.sign__in{
+
+.sign__in {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,6 +169,6 @@ body {
   padding: 10px 0 25px 0;
 }
 
-.sign__in a{
+.sign__in a {
   text-decoration: none;
 }

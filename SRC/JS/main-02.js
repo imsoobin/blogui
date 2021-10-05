@@ -2,14 +2,14 @@
 var sharePost = document.querySelector('.share__post')
 var shareContent = document.querySelector('.share__content')//Trỏ tới phần DOM muốn hiển thị 
 var share = document.querySelectorAll('.share')//Lấy tất cả các lớp có class là share
-for(var i=0; i < share.length; i++){ 
-  share[i].addEventListener('click', function(){ //tiến hành lặp và tạo sự kiện cho tất các lớp này
+for (var i = 0; i < share.length; i++) {
+  share[i].addEventListener('click', function () { //tiến hành lặp và tạo sự kiện cho tất các lớp này
     sharePost.style.display = 'block'
     shareContent.style.display = 'flex'
   })
 }
 // Đóng phần hiển thị share post
-function closeShare(){
+function closeShare() {
   sharePost.style.display = 'none'
 }
 
@@ -21,7 +21,7 @@ var linee = document.querySelector('.line')
 linee.style.left = tabbItem.offsetLeft + 'px' //Tự động căn lề trái khi chuyển tab
 linee.style.width = tabbItem.offsetWidth + 'px' //Tự động set độ rộng khi chuyển tab
 tabb.forEach((e, index) => { //Lấy tất cả các tab
-  var panees = panee[index] 
+  var panees = panee[index]
   e.addEventListener('click', function () {//Thêm sự kiện click cho tất cả các danh mục tab-item
     var removeActive = document.querySelector('.tab-item.active')
     var removePanne = document.querySelector('.tab-pane.active')
@@ -51,7 +51,7 @@ search.addEventListener('click', function () { //Thêm sự kiện cho class sea
   closeSearch.style.display = 'inline-block'
 })
 // Thêm sự kiện cho class close và đóng lại input khi click
-closeSearch.addEventListener('click', function(){
+closeSearch.addEventListener('click', function () {
   inputSearch.style.display = 'none'
   closeSearch.style.display = 'none'
 })
