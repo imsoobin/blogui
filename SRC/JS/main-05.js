@@ -14,7 +14,8 @@ let preTime = $('.btn-prev')
 let repeat = $('.btn-repeat')
 
 let index = 0
-let isPlaying = false, isRepeat = false;
+let isPlaying = false
+let isRepeat = false
 const PLAYER_STORAGE_KEY = 'son'
 
 /* Khai báo một object chứa các thành phần xử lý */
@@ -98,25 +99,32 @@ let podcastApp = {
       audio.currentTime -= 10.0
     }
 
-    //Xử lý lặp lại
-    repeat.onclick = function () {
-      isRepeat = !isRepeat
-      repeat.classList.toggle('active')
-      _this.setConfig('isRepeat', isRepeat)
-    }
-
     //xử lý khi kết thúc bài hát
     audio.onended = function () {
       if (isRepeat) {
         audio.play()
       }
     }
+
+    //Xử lý lặp lại
+    repeat.onclick = function () {
+      isRepeat = !isRepeat
+      repeat.classList.toggle('active', isRepeat)
+      _this.setConfig('isRepeat', isRepeat)
+    }
+
+
   },
 
+  loadConfig: function () {
+    isRepeat = this.config.isRepeat
+  },
   //Hàm khởi chạy
   start: function () {
+    this.loadConfig()
     this.handleEvents()
     this.loadPodcast(this.audioPodcast[index])
+    repeat.classList.toggle('active', isRepeat)
   }
 }
 podcastApp.start()
