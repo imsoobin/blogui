@@ -12,12 +12,13 @@
       },
       "title": "COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN",
       "image": "../../IMG/bussiness.jpg",
-      "audio": null,
+      "audio": "../../AUDIO/ThangNam.mp3",
       "content": "Trong podcast này",
       "numView": 0,
       "numComment": 0,
       "numLove": 0,
-      "isLove": false
+      "isLove": false,
+      "podContent":"Warren Buffet đã từng nói, nếu bạn muốn thành công trong cuộc sống thì một trong những điều quan trọng nhất bạn cần làm là: Invest in relationships with honest and ethical people - Đầu tư vào quan hệ với những người chân thật và có sống có giá trị đạo đức. Đó chính là nền tảng quan trọng hay hệ thống hỗ trợ tốt nhất cho sự thành công của một con người. Trong podcast này, Phi Vân sẽ chia sẻ 3 lý do tại sao và 3 lợi ích vững bền mà bạn sẽ có được khi đưa ra quyết định đầu tư có thể nói là mang tầm ảnh hưởng lớn nhất này đến cuộc đời của bạn."
     },
     {
       "id": 2,
@@ -31,19 +32,20 @@
       },
       "title": "TÂM THẾ TRỞ LẠI TỪ LOCKDOWN",
       "image": "../../IMG/book_02.jpg",
-      "audio": null,
+      "audio": "../../AUDIO/ThangNam.mp3",
       "content": "Hiển thị nội dung api",
       "numView": 0,
       "numComment": 0,
       "numLove": null,
-      "isLove": null
+      "isLove": null,
+      "podContent":"Warren Buffet đã từng nói, nếu bạn muốn thành công trong cuộc sống thì một trong những điều quan trọng nhất bạn cần làm là: Invest in relationships with honest and ethical people - Đầu tư vào quan hệ với những người chân thật và có sống có giá trị đạo đức. Đó chính là nền tảng quan trọng hay hệ thống hỗ trợ tốt nhất cho sự thành công của một con người. Trong podcast này, Phi Vân sẽ chia sẻ 3 lý do tại sao và 3 lợi ích vững bền mà bạn sẽ có được khi đưa ra quyết định đầu tư có thể nói là mang tầm ảnh hưởng lớn nhất này đến cuộc đời của bạn."
     },
     {
       "id": 3,
       "createdDate": null,
       "modifileDate": 1632560634000,
       "idUser": 1,
-      "idCategory": null,
+      "idCategory": "../../AUDIO/ThangNam.mp3",
       "user": {
         "firstName": "Đặng Thu",
         "lastName": "Huyền"
@@ -55,7 +57,8 @@
       "numView": 0,
       "numComment": 0,
       "numLove": null,
-      "isLove": null
+      "isLove": null,
+      "podContent":"Warren Buffet đã từng nói, nếu bạn muốn thành công trong cuộc sống thì một trong những điều quan trọng nhất bạn cần làm là: Invest in relationships with honest and ethical people - Đầu tư vào quan hệ với những người chân thật và có sống có giá trị đạo đức. Đó chính là nền tảng quan trọng hay hệ thống hỗ trợ tốt nhất cho sự thành công của một con người. Trong podcast này, Phi Vân sẽ chia sẻ 3 lý do tại sao và 3 lợi ích vững bền mà bạn sẽ có được khi đưa ra quyết định đầu tư có thể nói là mang tầm ảnh hưởng lớn nhất này đến cuộc đời của bạn."
     },
     {
       "id": 4,
@@ -69,12 +72,13 @@
       },
       "title": "KỸ NĂNG TÌM KIẾM THÔNG TIN LIÊN QUAN",
       "image": "../../IMG/book_02.jpg",
-      "audio": null,
+      "audio": "../../AUDIO/ThangNam.mp3",
       "content": "test content",
       "numView": 0,
       "numComment": 0,
       "numLove": null,
-      "isLove": null
+      "isLove": null,
+      "podContent":"Warren Buffet đã từng nói, nếu bạn muốn thành công trong cuộc sống thì một trong những điều quan trọng nhất bạn cần làm là: Invest in relationships with honest and ethical people - Đầu tư vào quan hệ với những người chân thật và có sống có giá trị đạo đức. Đó chính là nền tảng quan trọng hay hệ thống hỗ trợ tốt nhất cho sự thành công của một con người. Trong podcast này, Phi Vân sẽ chia sẻ 3 lý do tại sao và 3 lợi ích vững bền mà bạn sẽ có được khi đưa ra quyết định đầu tư có thể nói là mang tầm ảnh hưởng lớn nhất này đến cuộc đời của bạn."
     }
   ],
   "categories": [
@@ -168,5 +172,6 @@
       "createdDate": null,
       "name": "Thơ & Tản văn"
     }
-  ]
+  ],
+  "Podcast": []
 }

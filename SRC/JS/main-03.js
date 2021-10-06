@@ -97,7 +97,7 @@ const rep = $$('.rep')
 for (var i = 0; i < rep.length; i++) {
   rep[i].addEventListener('click', (e) => {
     var reps = e.target
-    var fe = reps.parentElement.parentElement.parentElement.parentElement.parentElement
+    var fe = reps.parentElement.parentElement.parentElement.parentElement
     var ff = fe.querySelector('.feedback_cm')
     ff.style.display = 'flex'
   })

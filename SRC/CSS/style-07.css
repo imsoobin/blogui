@@ -512,3 +512,6 @@ input[type=file] {
 .rep {
   cursor: pointer;
 }
+.repcm{
+  cursor: pointer;
+}

@@ -151,19 +151,19 @@
     </div>
 
     <!-- Nội dung mô tả podcast -->
-    <div class="pod_content">
+    <div class="pod_content" id="podContent">
       <div class="pod_curentime">
-        <span>Đặng Thu Huyền</span>&nbsp; | &nbsp;<span class="realdate">5/10/2021</span>
+        <span>Đặng Thu Huyền</span>&nbsp; | &nbsp;<span class="realdate">6/10/2021</span>
       </div>
       <div class="pod_des">
         <p>
           Warren Buffet đã từng nói, nếu bạn muốn thành công trong cuộc sống thì một trong những điều quan trọng nhất
-          bạn cần làm là: "Invest in relationships with honest and ethical people - Đầu tư vào quan hệ với những người
-          chân thật và có sống có giá trị đạo đức". Đó chính là nền tảng quan trọng hay hệ thống hỗ trợ tốt nhất cho sự
-          thành công của một con người.
-          <br><br><br>
-          Trong podcast này, Phi Vân sẽ chia sẻ 3 lý do tại sao và 3 lợi ích vững bền mà bạn sẽ có được khi đưa ra quyết
-          định đầu tư có thể nói là mang tầm ảnh hưởng lớn nhất này đến cuộc đời của bạn.
+          bạn cần làm là: Invest in relationships with honest and ethical people - Đầu tư vào quan hệ với những người
+          chân thật và có sống có giá trị đạo đức. <br><br>Đó chính là nền tảng quan trọng hay hệ thống hỗ trợ tốt nhất
+          cho sự
+          thành công của một con người. Trong podcast này, Phi Vân sẽ chia sẻ 3 lý do tại sao và 3 lợi ích vững bền mà
+          bạn sẽ có được khi đưa ra quyết định đầu tư có thể nói là mang tầm ảnh hưởng lớn nhất này đến cuộc đời của
+          bạn.
         </p>
       </div>
     </div>
@@ -261,7 +261,41 @@
             <span>1</span>&nbsp;lượt thích
           </div>
         </div>
-        <!-- FeedBack -->
+
+        <!-- Viết phản hồi đầu tiên cho bình luận -->
+        <div class="feedback_cm">
+          <div class="info_cm">
+            <div class="info__ava" style="margin: 5px 5px 0 10px;">
+              <img src="../../IMG/logo_vn.png" alt="" style="width: 25px; height: 25px;">
+            </div>
+          </div>
+          <form class="feedback__text">
+            <div class="feedback_btn">
+              <div class="input_feedback">
+                <textarea type="text" placeholder="Viết phản hồi..." class="feedbackText"></textarea>
+              </div>
+            </div>
+            <div class="feedback_event">
+              <div class="event">
+                <div class="btn_camera">
+                  <input type="file" id="camera">
+                </div>
+                <div class="btn_gif">
+                  <input type="file" id="gif">
+                </div>
+                <div class="btn_emoji">
+                  <input type="file" id="gif">
+                </div>
+              </div>
+              <div class="btn_cm">
+                <button class="close_feedback" type="button">Hủy</button>
+                <button class="post_feedback" type="submit">Đăng</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Các phản hồi bắt đầu được add thêm -->
         <div class="count__feedback">
           <div class="info_cm" style="margin-top: 20px;">
             <div>
@@ -298,38 +332,112 @@
               <span>1</span>&nbsp;lượt thích
             </div>
           </div>
+
+          <div class="feedback_cm">
+            <div class="info_cm">
+              <div class="info__ava" style="margin: 5px 5px 0 10px;">
+                <img src="../../IMG/logo_vn.png" alt="" style="width: 25px; height: 25px;">
+              </div>
+            </div>
+            <form class="feedback__text">
+              <div class="feedback_btn">
+                <div class="input_feedback">
+                  <textarea type="text" placeholder="Viết phản hồi..." class="feedbackText"></textarea>
+                </div>
+              </div>
+              <div class="feedback_event">
+                <div class="event">
+                  <div class="btn_camera">
+                    <input type="file" id="camera">
+                  </div>
+                  <div class="btn_gif">
+                    <input type="file" id="gif">
+                  </div>
+                  <div class="btn_emoji">
+                    <input type="file" id="gif">
+                  </div>
+                </div>
+                <div class="btn_cm">
+                  <button class="close_feedback" type="button">Hủy</button>
+                  <button class="post_feedback" type="submit">Đăng</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="feedback_cm">
-          <div class="info_cm">
-            <div class="info__ava" style="margin: 5px 5px 0 10px;">
-              <img src="../../IMG/logo_vn.png" alt="" style="width: 25px; height: 25px;">
+
+        <!-- Feedback ... -->
+        <div class="count__feedback">
+          <div class="info_cm" style="margin-top: 20px;">
+            <div>
+              <div class="info__ava">
+                <img src="../../IMG/logo_vn.png" alt="">
+              </div>
+              <div class="info__text">
+                <p>Dang Thu Huyen</p>
+                <p class="realtime_cm">4 giờ trước</p>
+              </div>
+              <div style="position: relative; top: 18px; left: -30px; font-size: 7px; cursor: pointer;">
+                <i class="fas fa-crown" title="Quản trị viên"></i> Render
+              </div>
             </div>
           </div>
-          <form class="feedback__text">
-            <div class="feedback_btn">
-              <div class="input_feedback">
-                <textarea type="text" placeholder="Viết phản hồi..." class="feedbackText"></textarea>
+          <div class="content_cm">
+            <p>Phản hồi lại</p>
+          </div>
+          <div class="view_like">
+            <div class="like_rep">
+              <div>
+                <i class="far fa-heart"></i>
+                <span>Thích</span>
+              </div>
+              <div>
+                <i class="far fa-comment-alt"></i>
+                <span class="rep">Phản hồi</span>
               </div>
             </div>
-            <div class="feedback_event">
-              <div class="event">
-                <div class="btn_camera">
-                  <input type="file" id="camera">
-                </div>
-                <div class="btn_gif">
-                  <input type="file" id="gif">
-                </div>
-                <div class="btn_emoji">
-                  <input type="file" id="gif">
-                </div>
+            <div class="people_liked">
+              <div>
+                <img src="../../IMG/logo_vn.png" alt="" style="width: 13px; height: 13px; border-radius: 50%;">
               </div>
-              <div class="btn_cm">
-                <button class="close_feedback" type="button">Hủy</button>
-                <button class="post_feedback" type="submit">Đăng</button>
+              <span>1</span>&nbsp;lượt thích
+            </div>
+          </div>
+
+          <div class="feedback_cm">
+            <div class="info_cm">
+              <div class="info__ava" style="margin: 5px 5px 0 10px;">
+                <img src="../../IMG/logo_vn.png" alt="" style="width: 25px; height: 25px;">
               </div>
             </div>
-          </form>
+            <form class="feedback__text">
+              <div class="feedback_btn">
+                <div class="input_feedback">
+                  <textarea type="text" placeholder="Viết phản hồi..." class="feedbackText"></textarea>
+                </div>
+              </div>
+              <div class="feedback_event">
+                <div class="event">
+                  <div class="btn_camera">
+                    <input type="file" id="camera">
+                  </div>
+                  <div class="btn_gif">
+                    <input type="file" id="gif">
+                  </div>
+                  <div class="btn_emoji">
+                    <input type="file" id="gif">
+                  </div>
+                </div>
+                <div class="btn_cm">
+                  <button class="close_feedback" type="button">Hủy</button>
+                  <button class="post_feedback" type="submit">Đăng</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
+
+        <!-- ------------------------------------- -->
       </div>
 
       <!-- Comment 2 -->
@@ -373,7 +481,41 @@
             <span>1</span>&nbsp;lượt thích
           </div>
         </div>
-        <!-- FeedBack -->
+
+        <!-- Viết phản hồi đầu tiên cho bình luận -->
+        <div class="feedback_cm">
+          <div class="info_cm">
+            <div class="info__ava" style="margin: 5px 5px 0 10px;">
+              <img src="../../IMG/logo_vn.png" alt="" style="width: 25px; height: 25px;">
+            </div>
+          </div>
+          <form class="feedback__text">
+            <div class="feedback_btn">
+              <div class="input_feedback">
+                <textarea type="text" placeholder="Viết phản hồi..." class="feedbackText"></textarea>
+              </div>
+            </div>
+            <div class="feedback_event">
+              <div class="event">
+                <div class="btn_camera">
+                  <input type="file" id="camera">
+                </div>
+                <div class="btn_gif">
+                  <input type="file" id="gif">
+                </div>
+                <div class="btn_emoji">
+                  <input type="file" id="gif">
+                </div>
+              </div>
+              <div class="btn_cm">
+                <button class="close_feedback" type="button">Hủy</button>
+                <button class="post_feedback" type="submit">Đăng</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Các phản hồi bắt đầu được add thêm -->
         <div class="count__feedback">
           <div class="info_cm" style="margin-top: 20px;">
             <div>
@@ -410,43 +552,43 @@
               <span>1</span>&nbsp;lượt thích
             </div>
           </div>
-        </div>
-        <div class="feedback_cm">
-          <div class="info_cm">
-            <div class="info__ava" style="margin: 5px 5px 0 10px;">
-              <img src="../../IMG/logo_vn.png" alt="" style="width: 25px; height: 25px;">
-            </div>
-          </div>
-          <form class="feedback__text">
-            <div class="feedback_btn">
-              <div class="input_feedback">
-                <textarea type="text" placeholder="Viết phản hồi..." class="feedbackText"></textarea>
-              </div>
-            </div>
-            <div class="feedback_event">
-              <div class="event">
-                <div class="btn_camera">
-                  <input type="file" id="camera">
-                </div>
-                <div class="btn_gif">
-                  <input type="file" id="gif">
-                </div>
-                <div class="btn_emoji">
-                  <input type="file" id="gif">
-                </div>
-              </div>
-              <div class="btn_cm">
-                <button class="close_feedback" type="button">Hủy</button>
-                <button class="post_feedback" type="submit">Đăng</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
 
-      <!-- Add comment -->
+          <div class="feedback_cm">
+            <div class="info_cm">
+              <div class="info__ava" style="margin: 5px 5px 0 10px;">
+                <img src="../../IMG/logo_vn.png" alt="" style="width: 25px; height: 25px;">
+              </div>
+            </div>
+            <form class="feedback__text">
+              <div class="feedback_btn">
+                <div class="input_feedback">
+                  <textarea type="text" placeholder="Viết phản hồi..." class="feedbackText"></textarea>
+                </div>
+              </div>
+              <div class="feedback_event">
+                <div class="event">
+                  <div class="btn_camera">
+                    <input type="file" id="camera">
+                  </div>
+                  <div class="btn_gif">
+                    <input type="file" id="gif">
+                  </div>
+                  <div class="btn_emoji">
+                    <input type="file" id="gif">
+                  </div>
+                </div>
+                <div class="btn_cm">
+                  <button class="close_feedback" type="button">Hủy</button>
+                  <button class="post_feedback" type="submit">Đăng</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- ---------------------------------- -->
+      </div>
     </div>
-    
+
     <!-- Footer -->
     <div class="footer">
       <div class="footer__content">

@@ -99,18 +99,18 @@ let podcastApp = {
     }
 
     //Xử lý lặp lại
-    repeat.onclick = function(){
+    repeat.onclick = function () {
       isRepeat = !isRepeat
       repeat.classList.toggle('active')
       _this.setConfig('isRepeat', isRepeat)
     }
 
     //xử lý khi kết thúc bài hát
-    audio.onended = function(){
-      if(isRepeat){
-          audio.play()
+    audio.onended = function () {
+      if (isRepeat) {
+        audio.play()
       }
-  }
+    }
   },
 
   //Hàm khởi chạy
@@ -133,6 +133,7 @@ const postFeedback = $('.post_feedback')
 const feedbackText = $$('.feedbackText')
 const closeFeedback = $$('.close_feedback')
 const rep = $$('.rep')
+
 
 //Hiển thị và ẩn comment
 comment.addEventListener('click', () => {
@@ -164,7 +165,7 @@ podTextCm.addEventListener('keyup', (e) => {
 for (var i = 0; i < rep.length; i++) {
   rep[i].addEventListener('click', (e) => {
     var reps = e.target
-    var fe = reps.parentElement.parentElement.parentElement.parentElement.parentElement
+    var fe = reps.parentElement.parentElement.parentElement.parentElement
     var ff = fe.querySelector('.feedback_cm')
     ff.style.display = 'flex'
   })
@@ -196,3 +197,25 @@ for (var i = 0; i < feedbackText.length; i++) {
     }
   })
 }
+
+// let callpostapi = 'http://localhost:3000/posts/'
+// fetch(callpostapi)
+//   .then(res => {
+//     return res.json()
+//   })
+//   .then(data => {
+//     var htmls = document.getElementById('podContent')
+//     var html = data.map((post) => {
+//       return `
+//       <div class="pod_curentime">
+//         <span>${post.user.firstName +' '+ post.user.lastName}</span>&nbsp; | &nbsp;<span class="realdate">${Date(post.createdDate)}</span>
+//       </div>
+//       <div class="pod_des">
+//         <p>
+//           ${post.podContent}
+//         </p>
+//       </div>
+//       `
+//     })
+//     htmls.innerHTML = html.join('')
+//   })
