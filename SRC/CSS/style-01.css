@@ -583,6 +583,117 @@ header .logo {
   color: #fff;
 }
 
+/* ChatBot */
+.chatbot{
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* display: none; */
+}
+.btn_chatbot{
+  cursor: pointer;
+}
+.btn_chatbot i{
+  font-size: 20px;
+}
+.btn_chatbot span{
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.chat_mess{
+  position: fixed;
+  height: 500px;  
+  right: 20px;
+  bottom: 0;
+  width: 350px;
+  /* background-color: rgb(145, 141, 141); */
+  animation: animate 0.7s ease-in-out;
+  display: none;
+}
+
+@keyframes animate{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+.mess_admin{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: #252525;
+  padding: 0 10px;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.nameadmin{
+  margin-bottom: 5px;
+}
+.nameadmin p{
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.status i{
+  font-size: 9px;
+  color: greenyellow;
+}
+.status span{
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.close_chat i{
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.messeages{
+  height: 360px;
+  background-color: #202020;
+  color: #fff;
+  overflow-y: scroll;
+  width: 350px;
+  display: flex;
+}
+.messeages ul li{
+  margin: 5px 10px;
+  padding: 5px;
+  background-color: #fff;
+  color: #111;
+}
+
+.input_mess{
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+}
+
+.messText{
+  width: 85%;
+  height: auto;
+}
+.messText textarea{
+  width: 100%;
+  height: auto;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  resize: none;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 25px 10px;
+}
+.messEmoji{
+  width: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  font-size: 20px;
+}
 /* Responsive */
 
 @media (max-width: 991px) {

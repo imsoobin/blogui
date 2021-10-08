@@ -17,6 +17,20 @@ function toggleMenu() {
   open.classList.toggle('active');
 }
 
+// var messsubmit = document.getElementById('messsubmit')
+// messsubmit.addEventListener('keyup', (e) => {
+//   messsubmit.style.height = "auto"
+//   let scheight = e.target.scrollHeightY
+//   messsubmit.style.height = `${scheight}px`
+// })
+
+var chatMess = document.querySelector('.chat_mess')
+function closeChatBot(){
+  chatMess.style.display = 'none'
+}
+function openChatBot(){
+  chatMess.style.display = 'block'
+}
 /* ------------ XỬ LÝ PHẦN FAKE API VÀ CALL HIỂN THỊ RA MÀN HÌNH ----------- */
 
 // let postapi = 'http://localhost:3000/posts'

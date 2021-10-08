@@ -92,6 +92,7 @@ const postFeedback = $('.post_feedback')
 const feedbackText = $$('.feedbackText')
 const closeFeedback = $$('.close_feedback')
 const rep = $$('.rep')
+const emoji = document.querySelector('.emoji-button')
 
 //Hiện thị phần phản hồi
 for (var i = 0; i < rep.length; i++) {
@@ -108,6 +109,7 @@ comment.addEventListener('click', () => {
   contentcm.style.display = 'block'
   comment.style.display = 'none'
   commentEvent.style.display = 'flex'
+  emoji.style.display = 'flex'
 })
 
 //Xử lý nút đăng bài và auto resize cho textarea của phần bình luận
@@ -146,6 +148,7 @@ closeComment.addEventListener('click', () => {
   commentEvent.style.display = 'none'
   contentcm.style.display = 'none'
   comment.style.display = 'block'
+  emoji.style.display = 'none'
 })
 //Xử lý nút đóng phản hồi
 for (var i = 0; i < closeFeedback.length; i++) {
@@ -154,4 +157,13 @@ for (var i = 0; i < closeFeedback.length; i++) {
     var co = cl.parentElement.parentElement.parentElement.parentElement
     co.style.display = 'none'
   })
+}
+
+
+var chatMess = document.querySelector('.chat_mess')
+function closeChatBot(){
+  chatMess.style.display = 'none'
+}
+function openChatBot(){
+  chatMess.style.display = 'block'
 }

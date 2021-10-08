@@ -66,3 +66,11 @@ for (var i = 0; i < pagenation.length; i++) {
     this.className += " actives"
   })
 }
+
+var chatMess = document.querySelector('.chat_mess')
+function closeChatBot(){
+  chatMess.style.display = 'none'
+}
+function openChatBot(){
+  chatMess.style.display = 'block'
+}

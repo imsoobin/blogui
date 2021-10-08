@@ -206,6 +206,14 @@ for (var i = 0; i < feedbackText.length; i++) {
   })
 }
 
+var chatMess = document.querySelector('.chat_mess')
+function closeChatBot(){
+  chatMess.style.display = 'none'
+}
+function openChatBot(){
+  chatMess.style.display = 'block'
+}
+
 // let callpostapi = 'http://localhost:3000/posts/'
 // fetch(callpostapi)
 //   .then(res => {
@@ -227,3 +235,4 @@ for (var i = 0; i < feedbackText.length; i++) {
 //     })
 //     htmls.innerHTML = html.join('')
 //   })
+
