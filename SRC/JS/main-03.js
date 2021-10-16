@@ -1,3 +1,10 @@
+function toggleMenu() {
+  var menu = document.querySelector('.toggle');
+  var open = document.querySelector('.categories__menu');
+  menu.classList.toggle('active');//Thêm thuộc tính toggle cho menu có tên là active
+  open.classList.toggle('active');
+}
+
 // Đóng mở input tìm kiếm khi có event
 var search = document.querySelector('.search')
 var inputSearch = document.querySelector('.inputSearch')
@@ -13,16 +20,16 @@ closeSearch.addEventListener('click', function () {
 })
 
 //Hiển thị chia sẻ 
-var dots = document.querySelector('.dots')
-var share = document.querySelector('.share')
-var sharepost = document.querySelector('.share__post')
+var dots = document.querySelector('.dotsdt')
+var share = document.querySelector('.sharedt')
+var sharepost = document.querySelector('.share__postdt')
 
 share.addEventListener('click', () => {
   sharepost.style.display = 'block'
-  share.classList.add('active')
+  share.classList.add('activedt')
 })
 dots.addEventListener('click', function () {
-  share.classList.toggle('actives')
+  share.classList.toggle('activesdt')
 })
 
 //Đóng phần chia sẻ

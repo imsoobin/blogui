@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View category</title>
+    <title>Edit post</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <div class="wrapper">
         <div class="container">
@@ -61,8 +59,8 @@
                                 <div class="left__title"><img src="assets/icon-user.svg" alt="">Admin<img
                                         class="left__iconDown" src="assets/arrow-down.svg" alt=""></div>
                                 <div class="left__text">
-                                    <a class="left__link" href="insert_admin.html">Insert admin</a>
-                                    <a class="left__link" href="view_admins.html">View admins</a>
+                                    <a class="left__link" href="insert_admin.html">Chèn Admin</a>
+                                    <a class="left__link" href="view_admins.html">Xem Admins</a>
                                 </div>
                             </li>
                             <li class="left__menuItem">
@@ -74,34 +72,51 @@
                 <div class="right">
                     <div class="right__content">
                         <div class="right__title">Dashboard</div>
-                        <p class="right__desc">View category</p>
-                        <div class="right__table">
-                            <div class="right__tableWrapper">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>STT</th>
-                                            <th>Title</th>
-                                            <th>Description</th>
-                                            <th>Update</th>
-                                            <th>Delete</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td data-label="STT">1</td>
-                                            <td data-label="Tiêu đề">Covid-19</td>
-                                            <td data-label="Mô tả">Nothing</td>
-                                            <td data-label="Sửa" class="right__iconTable"><a
-                                                    href="edit_category.html"><img src="assets/icon-edit.svg"
-                                                        alt=""></a></td>
-                                            <td data-label="Xoá" class="right__iconTable"><a href=""><img
-                                                        src="assets/icon-trash-black.svg" alt=""></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                        <p class="right__desc">Edit post</p>
+                        <div class="right__formWrapper">
+                            <form action="" method="post" enctype="multipart/form-data">
+                                <div class="right__inputWrapper">
+                                    <label for="title">Title</label>
+                                    <input type="text" placeholder="Tiêu đề">
+                                </div>
+                                <div class="right__inputWrapper">
+                                    <label for="image">Image</label>
+                                    <input type="file">
+                                </div>
+                                <div class="right__inputWrapper">
+                                    <label for="image">Audio</label>
+                                    <input type="file">
+                                </div>
+                                <div class="right__inputWrapper">
+                                    <label for="p_category">Category</label>
+                                    <select name="">
+                                        <option disabled selected>Select category</option>
+                                        <option value="">Dress</option>
+                                        <option value="">Top + Skert</option>
+                                    </select>
+                                </div>
+                                <div class="right__inputWrapper">
+                                    <label for="label">Course</label>
+                                    <select name="">
+                                        <option disabled selected>Select course</option>
+                                        <option value="new">Mới</option>
+                                        <option value="sale">Giảm giá</option>
+                                    </select>
+                                </div>
+                                <div class="right__inputWrapper">
+                                    <label for="p_category">Rank</label>
+                                    <select name="">
+                                        <option disabled selected>Select rank</option>
+                                        <option value="">Dress</option>
+                                        <option value="">Top + Skert</option>
+                                    </select>
+                                </div>
+                                <div class="right__inputWrapper">
+                                    <label for="desc">Content</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Write something..."></textarea>
+                                </div>
+                                <button class="btn" type="submit">UPDATE</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -111,5 +126,4 @@
 
     <script src="js/main.js"></script>
 </body>
-
 </html>

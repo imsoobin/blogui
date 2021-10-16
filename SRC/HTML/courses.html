@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khóa học</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <div class="logo__name">
+          <p>Dang Thu Huyen</p>
+        </div>
+      </div>
+      <div class="categories">
+        <div class="categories__menu">
+          <ul class="menu">
+            <li><a href="" onclick="toggleMenu();">Trang chủ</a></li>
+            <li class="item_02">
+              <a href="./blog.html">Blog</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Kỹ năng tương lai</a></li>
+                <li><a href="">Phát triển bản thân</a></li>
+                <li><a href="">Kinh doanh và Tech</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Cuộc sống hạnh phúc</a></li>
+                <li><a href="">Thơ & Tản văn</a></li>
+                <li><a href="">Phỏng vấn báo chí</a></li>
+              </ul>
+            </li>
+            <li class="item_02">
+              <a href="podcast.html" onclick="toggleMenu();">Podcast</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Câu chuyện kinh doanh</a></li>
+                <li><a href="">Khởi nghiệp</a></li>
+                <li><a href="">Kinh doanh và Tech</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Cuộc sống hạnh phúc</a></li>
+                <li><a href="">Thơ & Tản văn</a></li>
+                <li><a href="">Phỏng vấn báo chí</a></li>
+              </ul>
+            </li>
+            <li class="item_02">
+              <a href="" onclick="toggleMenu();">Thư viện</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Group cộng đồng</a></li>
+                <li><a href="">Đăng ký thành viên</a></li>
+                <li><a href="">Thư viện cộng đồng</a></li>
+                <li><a href="">Liên hệ</a></li>
+              </ul>
+            </li>
+            <li><a href="#books" onclick="toggleMenu();">Sách</a></li>
+            <li class="item_05"><a href="courses.html" onclick="toggleMenu();">Khóa học</a></li>
+          </ul>
+        </div>
+        <div class="contact__icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+        <div class="categories__notification">
+          <a href="" title="Thông báo"><i class="fas fa-bell"></i></a>
+          <span>40</span>
+          <!-- <img src="../../IMG/Firefox-logo.png" style="width: 30px; height: 30px; position: absolute;
+            margin-left: 30px;
+          " alt="Tài khoản" title="Tài khoản"> -->
+        </div>
+        <div class="categories__login">
+          <div class="login__icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <a href="login.html">
+            <button>Login</button>
+          </a>
+        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
+      </div>
+    </header>
+    <div class="course">
+      <div class="list_courses">
+        <div class="item__course">
+          <a class="course__img" href="course_detail.html">
+            <img src="../../IMG/course.png" alt="">
+          </a>
+          <div>
+            <div class="course__title">
+              <a href="course_detail.html">
+                <h3>Critical Thinking - Bộ kỹ năng Tư duy phản biện </h3>
+                <p>
+                  3.119 Người tham dự
+                </p>
+              </a>
+            </div>
+            <div class="line"></div>
+            <div class="course_member">
+              Blog Member
+            </div>
+            <div class="course__btn">
+              <button>Tham gia</button>
+            </div>
+          </div>
+        </div>
+        <div class="item__course">
+          <a class="course__img" href="course_detail.html">
+            <img src="" alt="">
+          </a>
+          <div class="course__title">
+            <a href="course_detail.html">
+              <h3>Critical Thinking - Bộ kỹ năng Tư duy phản biện</h3>
+              <p>
+                3.119 Người tham dự
+              </p>
+            </a>
+          </div>
+          <div class="line"></div>
+          <div class="course_member">
+            Blog Member
+          </div>
+          <div class="course__btn">
+            <button>Tham gia</button>
+          </div>
+        </div>
+        <div class="item__course">
+          <a class="course__img" href="course_detail.html">
+            <img src="" alt="">
+          </a>
+          <div class="course__title">
+            <a href="course_detail.html">
+              <h3>Critical Thinking - Bộ kỹ năng Tư duy phản biện</h3>
+              <p>
+                3.119 Người tham dự
+              </p>
+            </a>
+          </div>
+          <div class="line"></div>
+          <div class="course_member">
+            Blog Member
+          </div>
+          <div class="course__btn">
+            <button>Tham gia</button>
+          </div>
+        </div>
+        <div class="item__course">
+          <a class="course__img" href="course_detail.html">
+            <img src="" alt="">
+          </a>
+          <div class="course__title">
+            <a href="course_detail.html">
+              <h3>Critical Thinking - Bộ kỹ năng Tư duy phản biện</h3>
+              <p>
+                3.119 Người tham dự
+              </p>
+            </a>
+          </div>
+          <div class="line"></div>
+          <div class="course_member">
+            Blog Member
+          </div>
+          <div class="course__btn">
+            <button>Tham gia</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Footer -->
+     <div class="footer">
+      <div class="footer__content"  style="background-color: #323232;">
+        <div class="contact__ft">
+          <h3>Hãy nhập vào email để phản hồi</h3>
+          <input type="text" placeholder="example@gmail.com">
+          <div>
+            <button style="background: #fff; padding: 15px 30px; font-size: 16px;">Subcribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright__footer">
+        <p>@CopyRight 2021 by - DANG THU HUYEN</p>
+      </div>
+    </div>
+
+    <!-- ChatBot -->
+    <div class="chatbot">
+      <div class="btn_chatbot" onclick="openChatBot()">
+        <i class="lar la-comment"></i>
+        <span>Tin nhắn online</span>
+      </div>
+    </div>
+    <div class="chat_mess">
+      <div class="mess_admin">
+        <div>
+          <div class="nameadmin">
+            <p>Đặng Thu Huyền</p>
+          </div>
+          <div class="status">
+            <i class="fas fa-circle"></i>
+            <span>Trực tuyến</span>
+          </div>
+        </div>
+        <div class="close_chat" onclick="closeChatBot()">
+          <i class="las la-times"></i>
+        </div>
+      </div>
+      <div class="messeages">
+          <ul>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+            <li>hello cacban</li>
+          </ul>
+      </div>
+      <div class="input_mess">
+        <div class="messText">
+         <textarea name="" id="messsubmit" placeholder="Nhập vào tin nhắn của bạn"></textarea>
+        </div>
+        <div class="messEmoji">
+          <i class="las la-paperclip"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../JS/main-06.js"></script>
+</html>

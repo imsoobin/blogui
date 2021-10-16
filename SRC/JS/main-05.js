@@ -6,7 +6,7 @@ let $$ = document.querySelectorAll.bind(document)
 let play = $('.btn-toggle-play')
 let audio = $('#audio')
 let player = $('.player')
-let timeUpdate = $('#progress')
+let timeUpdate = $('#progresspcdt')
 let rightTime = $('.right')
 let leftTime = $('.left')
 let skipTime = $('.btn-next')
@@ -174,7 +174,7 @@ for (var i = 0; i < rep.length; i++) {
   rep[i].addEventListener('click', (e) => {
     var reps = e.target
     var fe = reps.parentElement.parentElement.parentElement.parentElement
-    var ff = fe.querySelector('.feedback_cm')
+    var ff = fe.querySelector('.feedback_cmpc')
     ff.style.display = 'flex'
   })
 }
