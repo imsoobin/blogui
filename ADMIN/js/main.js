@@ -30,3 +30,20 @@ window.addEventListener("load", event => {
         }
     };
 })
+
+let manufacturerList = ["Course 1", "Course 2", "Course 3"]
+let audio_name = document.getElementById("audio_name");
+
+audio_name.onchange = function () {
+    let input = this.files[0];
+    if (input) {
+        var courses_name = document.getElementById('courses_name')
+        courses_name.innerHTML = ''
+        if (audio_name.value != null) {
+            for (var i of manufacturerList) {
+                courses_name.innerHTML += `<option value='${[i]}'>${[i]}</option>`
+            }
+        }
+    }
+};
+

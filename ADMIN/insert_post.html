@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insert post</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="wrapper">
         <div class="container">
@@ -85,7 +87,7 @@
                                 </div>
                                 <div class="right__inputWrapper">
                                     <label for="image">Audio</label>
-                                    <input type="file">
+                                    <input type="file" id="audio_name">
                                 </div>
                                 <div class="right__inputWrapper">
                                     <label for="p_category">Category</label>
@@ -97,10 +99,8 @@
                                 </div>
                                 <div class="right__inputWrapper">
                                     <label for="label">Course</label>
-                                    <select name="">
-                                        <option disabled selected>Select course</option>
-                                        <option value="new">Mới</option>
-                                        <option value="sale">Giảm giá</option>
+                                    <select name="" id="courses_name">
+
                                     </select>
                                 </div>
                                 <div class="right__inputWrapper">
@@ -113,7 +113,8 @@
                                 </div>
                                 <div class="right__inputWrapper">
                                     <label for="desc">Content</label>
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Write something..."></textarea>
+                                    <textarea name="" id="" cols="30" rows="10"
+                                        placeholder="Write something..."></textarea>
                                 </div>
                                 <button class="btn" type="submit">ADD</button>
                             </form>
@@ -126,4 +127,8 @@
 
     <script src="js/main.js"></script>
 </body>
+<script>
+    
+</script>
+
 </html>

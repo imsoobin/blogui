@@ -178,9 +178,9 @@
       </div>
     </div>
 
-     <!-- Footer -->
-     <div class="footer">
-      <div class="footer__content"  style="background-color: #323232;">
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer__content" style="background-color: #323232;">
         <div class="contact__ft">
           <h3>Hãy nhập vào email để phản hồi</h3>
           <input type="text" placeholder="example@gmail.com">
@@ -217,30 +217,30 @@
         </div>
       </div>
       <div class="messeages">
-          <ul>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-            <li>hello cacban</li>
-          </ul>
+        <ul>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+        </ul>
       </div>
       <div class="input_mess">
         <div class="messText">
-         <textarea name="" id="messsubmit" placeholder="Nhập vào tin nhắn của bạn"></textarea>
+          <textarea name="" id="messsubmit" placeholder="Nhập vào tin nhắn của bạn"></textarea>
         </div>
         <div class="messEmoji">
           <i class="las la-paperclip"></i>
@@ -249,5 +249,17 @@
     </div>
   </div>
 </body>
-<script src="../JS/main-06.js"></script>
+<script>
+  // Đóng mở chatbot
+
+  var chatMess = document.querySelector('.chat_mess')
+  function closeChatBot() {
+    chatMess.style.display = 'none'
+  }
+  function openChatBot() {
+    chatMess.style.display = 'block'
+  }
+
+</script>
+
 </html>
