@@ -1,3 +1,10 @@
+// Đóng mở phần header khi có tương thích màn hình
+function toggleMenu() {
+  var menu = document.querySelector('.toggle');
+  var open = document.querySelector('.categories__menu');
+  menu.classList.toggle('active');//Thêm thuộc tính toggle cho menu có tên là active
+  open.classList.toggle('active');
+}
 /* --------------------------- Xử lý phần audio phát podcast -------------------------*/
 
 let $ = document.querySelector.bind(document)
