@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài viết theo chủ đề</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    
+    <header>
+      <div class="logo">
+        <div class="logo__name">
+          <p>Dang Thu Huyen</p>
+        </div>
+      </div>
+      <div class="categories">
+        <div class="categories__menu">
+          <ul class="menu">
+            <li><a href="homepage.html" onclick="toggleMenu();">Trang chủ</a></li>
+            <li class="item_02">
+              <a href="./blog.html" class="active">Blog</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="blog_title.html">Kỹ năng tương lai</a></li>
+                <li><a href="blog_title.html">Phát triển bản thân</a></li>
+                <li><a href="blog_title.html">Kinh doanh và Tech</a></li>
+                <li><a href="blog_title.html">Travel</a></li>
+                <li><a href="blog_title.html">Cuộc sống hạnh phúc</a></li>
+                <li><a href="blog_title.html">Thơ & Tản văn</a></li>
+                <li><a href="blog_title.html">Phỏng vấn báo chí</a></li>
+              </ul>
+            </li>
+            <li class="item_02">
+              <a href="podcast.html" onclick="toggleMenu();">Podcast</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Câu chuyện kinh doanh</a></li>
+                <li><a href="">Khởi nghiệp</a></li>
+                <li><a href="">Kinh doanh và Tech</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Cuộc sống hạnh phúc</a></li>
+                <li><a href="">Thơ & Tản văn</a></li>
+                <li><a href="">Phỏng vấn báo chí</a></li>
+              </ul>
+            </li>
+            <li class="item_02">
+              <a href="" onclick="toggleMenu();">Thư viện</a>
+              <span><i class="fas fa-chevron-down"></i></span>
+              <ul class="sub_menu">
+                <li><a href="">Group cộng đồng</a></li>
+                <li><a href="">Đăng ký thành viên</a></li>
+                <li><a href="">Thư viện cộng đồng</a></li>
+                <li><a href="">Liên hệ</a></li>
+              </ul>
+            </li>
+            <li><a href="homepage.html#books" onclick="toggleMenu();">Sách</a></li>
+            <li class="item_05"><a href="courses.html" onclick="toggleMenu();">Khóa học</a></li>
+          </ul>
+        </div>
+        <div class="contact__icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+        <div class="categories__notification">
+          <div>
+            <i class="fas fa-bell dropdown-toggle" data-toggle="notificationMenu"></i>
+            <span class="firstspan">40</span>
+          </div>
+          
+          <!-- <ul id="notificationMenu" class="dropdown-menu notification-menu">
+            <div class="dropdown-menu-header">
+              <span>Thông báo</span>
+            </div>
+            <div class="dropdown-menu-content overlay-scrollbar">
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
+                  </div>
+                  <span>
+                    Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
+                    <br>
+                    <span>
+                      2 giờ trước
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
+                  </div>
+                  <span>
+                    Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
+                    <br>
+                    <span>
+                      4 giờ trước
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </div>
+            <div class="dropdown-menu-footer">
+              <span>Tất cả thông báo</span>
+            </div>
+          </ul>
+          <img src="../../IMG/dangthuhuyen_blog.jpg" class="user-img" alt="Tài khoản" title="Tài khoản" id="profile">
+           -->
+          <div class="logout">
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="profile.html">My L&D Center</a></li>
+              <li><a href="profile.html">My Account</a></li>
+              <li class="line-logout"></li>
+              <li><a href="">Đăng xuất</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="categories__login">
+          <div class="login__icon">
+            <i class="fas fa-user"></i>
+          </div>
+          <a href="login.html">
+            <button>Login</button>
+          </a>
+        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
+      </div>
+    </header>
+
+    <div class="blog__mainTitle">
+      <p>
+        Kỹ năng tương lai
+        <div class="line__mainTitle">
+          <span></span>
+        </div>
+      </p>
+    </div>
+    <div class="blog__itemTitle">
+      <div class="item__post">
+        <a class="item__img" href="blog_detail.html">
+          <img src="../../IMG/blog.jpg" alt="">
+        </a>
+        <div style="display: flex;">
+          <div class="item__info">
+            <div class="info__avablog">
+              <img src="../../IMG/logo_vn.png" alt="">
+            </div>
+            <div class="info__text">
+              <h5>Dang Thu Huyen</h5>
+              <p class="realtimebl">4 giờ trước</p>
+            </div>
+            <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+              <i class="fas fa-crown" title="Quản trị viên"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item__title">
+          <a href="blog_detail.html" style="color: black; text-decoration: none;">
+            <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptate recusandae eum sit, totam
+              inventore repellat consequuntur nemo rerum.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptate recusandae eum sit, totam
+              inventore repellat consequuntur nemo rerum.
+            </p>
+          </a>
+        </div>
+        <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+        <div class="item__icon">
+          <div>
+            <i class="far fa-eye"> 999</i>
+            <i class="far fa-comment-alt" style="position: relative; left: -20px;"> 10</i>
+          </div>
+          <i class="far fa-heart"> 99</i>
+        </div>
+      </div>
+      <div class="item__post">
+        <a class="item__img" href="blog_detail.html">
+          <img src="../../IMG/blog.jpg" alt="">
+        </a>
+        <div style="display: flex;">
+          <div class="item__info">
+            <div class="info__avablog">
+              <img src="../../IMG/logo_vn.png" alt="">
+            </div>
+            <div class="info__text">
+              <h5>Dang Thu Huyen</h5>
+              <p class="realtimebl">4 giờ trước</p>
+            </div>
+            <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+              <i class="fas fa-crown" title="Quản trị viên"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item__title">
+          <a href="blog_detail.html" style="color: black; text-decoration: none;">
+            <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptate recusandae eum sit, totam
+              inventore repellat consequuntur nemo rerum
+            </p>
+          </a>
+        </div>
+        <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+        <div class="item__icon">
+          <div>
+            <i class="far fa-eye"> 999</i>
+            <i class="far fa-comment-alt" style="position: relative; left: -20px;"> 10</i>
+          </div>
+          <i class="far fa-heart"> 99</i>
+        </div>
+      </div>
+      <div class="item__post">
+        <a class="item__img" href="blog_detail.html">
+          <img src="../../IMG/blog.jpg" alt="">
+        </a>
+        <div style="display: flex;">
+          <div class="item__info">
+            <div class="info__avablog">
+              <img src="../../IMG/logo_vn.png" alt="">
+            </div>
+            <div class="info__text">
+              <h5>Dang Thu Huyen</h5>
+              <p class="realtimebl">4 giờ trước</p>
+            </div>
+            <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+              <i class="fas fa-crown" title="Quản trị viên"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item__title">
+          <a href="blog_detail.html" style="color: black; text-decoration: none;">
+            <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptate recusandae eum sit, totam
+              inventore repellat consequuntur nemo rerum
+            </p>
+          </a>
+        </div>
+        <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+        <div class="item__icon">
+          <div>
+            <i class="far fa-eye"> 999</i>
+            <i class="far fa-comment-alt" style="position: relative; left: -20px;"> 10</i>
+          </div>
+          <i class="far fa-heart"> 99</i>
+        </div>
+      </div>
+      <div class="item__post">
+        <a class="item__img" href="blog_detail.html">
+          <img src="../../IMG/blog.jpg" alt="">
+        </a>
+        <div style="display: flex;">
+          <div class="item__info">
+            <div class="info__avablog">
+              <img src="../../IMG/logo_vn.png" alt="">
+            </div>
+            <div class="info__text">
+              <h5>Dang Thu Huyen</h5>
+              <p class="realtimebl">4 giờ trước</p>
+            </div>
+            <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+              <i class="fas fa-crown" title="Quản trị viên"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item__title">
+          <a href="blog_detail.html" style="color: black; text-decoration: none;">
+            <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptate recusandae eum sit, totam
+              inventore repellat consequuntur nemo rerum
+            </p>
+          </a>
+        </div>
+        <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+        <div class="item__icon">
+          <div>
+            <i class="far fa-eye"> 999</i>
+            <i class="far fa-comment-alt" style="position: relative; left: -20px;"> 10</i>
+          </div>
+          <i class="far fa-heart"> 99</i>
+        </div>
+      </div>
+      <div class="item__post">
+        <a class="item__img" href="blog_detail.html">
+          <img src="../../IMG/blog.jpg" alt="">
+        </a>
+        <div style="display: flex;">
+          <div class="item__info">
+            <div class="info__avablog">
+              <img src="../../IMG/logo_vn.png" alt="">
+            </div>
+            <div class="info__text">
+              <h5>Dang Thu Huyen</h5>
+              <p class="realtimebl">4 giờ trước</p>
+            </div>
+            <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+              <i class="fas fa-crown" title="Quản trị viên"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item__title">
+          <a href="blog_detail.html" style="color: black; text-decoration: none;">
+            <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptate recusandae eum sit, totam
+              inventore repellat consequuntur nemo rerum
+            </p>
+          </a>
+        </div>
+        <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+        <div class="item__icon">
+          <div>
+            <i class="far fa-eye"> 999</i>
+            <i class="far fa-comment-alt" style="position: relative; left: -20px;"> 10</i>
+          </div>
+          <i class="far fa-heart"> 99</i>
+        </div>
+      </div>
+      <div class="item__post">
+        <a class="item__img" href="blog_detail.html">
+          <img src="../../IMG/blog.jpg" alt="">
+        </a>
+        <div style="display: flex;">
+          <div class="item__info">
+            <div class="info__avablog">
+              <img src="../../IMG/logo_vn.png" alt="">
+            </div>
+            <div class="info__text">
+              <h5>Dang Thu Huyen</h5>
+              <p class="realtimebl">4 giờ trước</p>
+            </div>
+            <div style="position: relative; top: -6px; left: 5px; font-size: 10px; cursor: pointer;">
+              <i class="fas fa-crown" title="Quản trị viên"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item__title">
+          <a href="blog_detail.html" style="color: black; text-decoration: none;">
+            <h3>COVID & NIỀM TIN CÁ NHÂN CÁ NHÂN</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio voluptate recusandae eum sit, totam
+              inventore repellat consequuntur nemo rerum
+            </p>
+          </a>
+        </div>
+        <div style="border-bottom: 1px solid#ccc; width: 250px; margin: auto;"></div>
+        <div class="item__icon">
+          <div>
+            <i class="far fa-eye"> 999</i>
+            <i class="far fa-comment-alt" style="position: relative; left: -20px;"> 10</i>
+          </div>
+          <i class="far fa-heart"> 99</i>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination" style="padding: 10px 0 20px 0;">
+      <span class="p">«</span>
+      <span class="p actives">1</span>
+      <span class="p">2</span>
+      <span class="p">3</span>
+      <span class="p">4</span>
+      <span class="p">5</span>
+      <span class="p">6</span>
+      <span class="p">»</span>
+    </div>
+
+     <!-- Footer -->
+     <div class="footer">
+      <div class="footer__content">
+        <div class="contact__ft">
+          <h3>Hãy nhập vào email để phản hồi</h3>
+          <input type="text" placeholder="example@gmail.com">
+          <div>
+            <button>Subcribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="copyright__footer">
+        <p>@CopyRight 2021 by - DANG THU HUYEN</p>
+      </div>
+    </div>
+
+    <!-- ChatBot -->
+    <div class="chatbot">
+      <div class="btn_chatbot" onclick="openChatBot()">
+        <i class="lar la-comment"></i>
+        <span>Tin nhắn online</span>
+      </div>
+    </div>
+    <div class="chat_mess">
+      <div class="mess_admin">
+        <div>
+          <div class="nameadmin">
+            <p>Đặng Thu Huyền</p>
+          </div>
+          <div class="status">
+            <i class="fas fa-circle"></i>
+            <span>Trực tuyến</span>
+          </div>
+        </div>
+        <div class="close_chat" onclick="closeChatBot()">
+          <i class="las la-times"></i>
+        </div>
+      </div>
+      <div class="messeages">
+        <ul>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+          <li>hello cacban</li>
+        </ul>
+      </div>
+      <div class="input_mess">
+        <div class="messText">
+          <textarea name="" id="messsubmit" placeholder="Nhập vào tin nhắn của bạn"></textarea>
+        </div>
+        <div class="messEmoji">
+          <i class="las la-paperclip"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../JS/blog_title.js"></script>
+</html>

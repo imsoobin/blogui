@@ -29,22 +29,22 @@
         <div class="categories">
           <div class="categories__menu">
             <ul class="menu">
-              <li><a href="./homepage.html" onclick="toggleMenu();">Trang chủ</a></li>
+              <li><a href="homepage.html" onclick="toggleMenu();">Trang chủ</a></li>
               <li class="item_02">
-                <a href="blog.html">Blog</a>
+                <a href="./blog.html">Blog</a>
                 <span><i class="fas fa-chevron-down"></i></span>
                 <ul class="sub_menu">
-                  <li><a href="">Kỹ năng tương lai</a></li>
-                  <li><a href="">Phát triển bản thân</a></li>
-                  <li><a href="">Kinh doanh và Tech</a></li>
-                  <li><a href="">Travel</a></li>
-                  <li><a href="">Cuộc sống hạnh phúc</a></li>
-                  <li><a href="">Thơ & Tản văn</a></li>
-                  <li><a href="">Phỏng vấn báo chí</a></li>
+                  <li><a href="blog_title.html">Kỹ năng tương lai</a></li>
+                  <li><a href="blog_title.html">Phát triển bản thân</a></li>
+                  <li><a href="blog_title.html">Kinh doanh và Tech</a></li>
+                  <li><a href="blog_title.html">Travel</a></li>
+                  <li><a href="blog_title.html">Cuộc sống hạnh phúc</a></li>
+                  <li><a href="blog_title.html">Thơ & Tản văn</a></li>
+                  <li><a href="blog_title.html">Phỏng vấn báo chí</a></li>
                 </ul>
               </li>
               <li class="item_02">
-                <a href="podcast.html" onclick="toggleMenu();">Podcast</a>
+                <a href="podcast.html" onclick="toggleMenu();" class="active">Podcast</a>
                 <span><i class="fas fa-chevron-down"></i></span>
                 <ul class="sub_menu">
                   <li><a href="">Câu chuyện kinh doanh</a></li>
@@ -76,11 +76,58 @@
             <i class="fab fa-youtube"></i>
           </div>
           <div class="categories__notification">
-            <a href="" title="Thông báo"><i class="fas fa-bell"></i></a>
-            <span>40</span>
-            <!-- <img src="../../IMG/Firefox-logo.png" style="width: 30px; height: 30px; position: absolute;
-            margin-left: 30px;
-          " alt="Tài khoản" title="Tài khoản"> -->
+            <div>
+              <i class="fas fa-bell dropdown-toggle" data-toggle="notificationMenu"></i>
+              <span class="firstspan">40</span>
+            </div>
+            <!-- <ul id="notificationMenu" class="dropdown-menu notification-menu">
+              <div class="dropdown-menu-header">
+                <span>Thông báo</span>
+              </div>
+              <div class="dropdown-menu-content overlay-scrollbar">
+                <li class="dropdown-menu-item">
+                  <a href="#" class="dropdown-menu-link">
+                    <div>
+                      <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
+                    </div>
+                    <span>
+                      Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
+                      <br>
+                      <span>
+                        2 giờ trước
+                      </span>
+                    </span>
+                  </a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a href="#" class="dropdown-menu-link">
+                    <div>
+                      <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
+                    </div>
+                    <span>
+                      Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
+                      <br>
+                      <span>
+                        4 giờ trước
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              </div>
+              <div class="dropdown-menu-footer">
+                <span>Tất cả thông báo</span>
+              </div>
+            </ul>
+            <img src="../../IMG/dangthuhuyen_blog.jpg" class="user-img" alt="Tài khoản" title="Tài khoản" id="profile"> -->
+            <div class="logout">
+              <ul>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="profile.html">My L&D Center</a></li>
+                <li><a href="profile.html">My Account</a></li>
+                <li class="line-logout"></li>
+                <li><a href="">Đăng xuất</a></li>
+              </ul>
+            </div>
           </div>
           <div class="categories__login">
             <div class="login__icon">
@@ -440,54 +487,6 @@
   </div>
 </body>
 
-<script>
-  var chatMess = document.querySelector('.chat_mess')
-  function closeChatBot() {
-    chatMess.style.display = 'none'
-  }
-  function openChatBot() {
-    chatMess.style.display = 'block'
-  }
-
-  //Phần hiển thị phần đọc thêm (readmore)
-  function myFunction() {
-    var dots = document.getElementById("point");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less";
-      moreText.style.display = "inline";
-    }
-  }
-
-  //Phần load thêm podcast (loadmore)
-  $(function () {
-    $(".pod").slice(0, 5).show();
-    $("body").on('click touchstart', '#loadMore', function (e) {
-      e.preventDefault();
-      $(".pod:hidden").slice(0, 5).slideDown();
-      if ($(".pod:hidden").length == 0) {
-        $(".loadMore").css('visibility', 'hidden');
-      }
-      $('html,body').animate({
-        scrollTop: $(this).offset().top
-      }, 500);
-    });
-  });
-
-  // Đóng mở phần header khi có tương thích màn hình
-  function toggleMenu() {
-    var menu = document.querySelector('.toggle');
-    var open = document.querySelector('.categories__menu');
-    menu.classList.toggle('active');//Thêm thuộc tính toggle cho menu có tên là active
-    open.classList.toggle('active');
-  }
-</script>
+<script src="../JS/podcast.js"></script>
 
 </html>

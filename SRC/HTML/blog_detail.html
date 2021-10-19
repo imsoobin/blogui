@@ -28,25 +28,22 @@
         <div class="logo__name">
           <p>Dang Thu Huyen</p>
         </div>
-        <!-- <div class="logo__icon">
-          <img src="../../IMG/logo.PNG" alt="">
-        </div> -->
       </div>
       <div class="categories">
         <div class="categories__menu">
           <ul class="menu">
-            <li><a href="./homepage.html" onclick="toggleMenu();">Trang chủ</a></li>
+            <li><a href="homepage.html" onclick="toggleMenu();">Trang chủ</a></li>
             <li class="item_02">
-              <a href="#blog">Blog</a>
+              <a href="./blog.html" class="active">Blog</a>
               <span><i class="fas fa-chevron-down"></i></span>
               <ul class="sub_menu">
-                <li><a href="">Kỹ năng tương lai</a></li>
-                <li><a href="">Phát triển bản thân</a></li>
-                <li><a href="">Kinh doanh và Tech</a></li>
-                <li><a href="">Travel</a></li>
-                <li><a href="">Cuộc sống hạnh phúc</a></li>
-                <li><a href="">Thơ & Tản văn</a></li>
-                <li><a href="">Phỏng vấn báo chí</a></li>
+                <li><a href="blog_title.html">Kỹ năng tương lai</a></li>
+                <li><a href="blog_title.html">Phát triển bản thân</a></li>
+                <li><a href="blog_title.html">Kinh doanh và Tech</a></li>
+                <li><a href="blog_title.html">Travel</a></li>
+                <li><a href="blog_title.html">Cuộc sống hạnh phúc</a></li>
+                <li><a href="blog_title.html">Thơ & Tản văn</a></li>
+                <li><a href="blog_title.html">Phỏng vấn báo chí</a></li>
               </ul>
             </li>
             <li class="item_02">
@@ -82,11 +79,60 @@
           <i class="fab fa-youtube"></i>
         </div>
         <div class="categories__notification">
-          <a href="" title="Thông báo"><i class="fas fa-bell"></i></a>
-          <span>40</span>
-          <!-- <img src="../../IMG/Firefox-logo.png" style="width: 30px; height: 30px; position: absolute;
-            margin-left: 30px;
-          " alt="Tài khoản" title="Tài khoản"> -->
+          <div>
+            <i class="fas fa-bell dropdown-toggle" data-toggle="notificationMenu"></i>
+            <span class="firstspan">40</span>
+          </div>
+          
+          <!-- <ul id="notificationMenu" class="dropdown-menu notification-menu">
+            <div class="dropdown-menu-header">
+              <span>Thông báo</span>
+            </div>
+            <div class="dropdown-menu-content overlay-scrollbar">
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
+                  </div>
+                  <span>
+                    Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
+                    <br>
+                    <span>
+                      2 giờ trước
+                    </span>
+                  </span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <img src="../../IMG/dangthuhuyen_blog.jpg" alt="">
+                  </div>
+                  <span>
+                    Hãy cập nhật và chia sẻ những kiến thức mới cùng tôi
+                    <br>
+                    <span>
+                      4 giờ trước
+                    </span>
+                  </span>
+                </a>
+              </li>
+            </div>
+            <div class="dropdown-menu-footer">
+              <span>Tất cả thông báo</span>
+            </div>
+          </ul>
+          <img src="../../IMG/dangthuhuyen_blog.jpg" class="user-img" alt="Tài khoản" title="Tài khoản" id="profile">
+           -->
+          <div class="logout">
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="profile.html">My L&D Center</a></li>
+              <li><a href="profile.html">My Account</a></li>
+              <li class="line-logout"></li>
+              <li><a href="">Đăng xuất</a></li>
+            </ul>
+          </div>
         </div>
         <div class="categories__login">
           <div class="login__icon">
@@ -122,17 +168,17 @@
     <div class="tablistdt">
       <div class="item__listdt">
         <ul>
-          <li><a href="">All Posts</a></li>
-          <li><a href="">Ký năng tương lai</a></li>
-          <li><a href="">Phát triển bản thân</a></li>
+          <li><a href="blog.html">All Posts</a></li>
+          <li><a href="blog_title.html">Ký năng tương lai</a></li>
+          <li><a href="blog_title.html">Phát triển bản thân</a></li>
           <li style="font-weight: 600;">
             Khác
             <i class="fas fa-chevron-down" style="font-size: 12px;"></i>
             <ul>
-              <li><a href="">Cuộc sống & hạnh phúc</a></li>
-              <li><a href="">Thơ & tản văn</a></li>
-              <li><a href="">Travel</a></li>
-              <li><a href="">Phỏng vấn & báo chí</a></li>
+              <li><a href="blog_title.html">Cuộc sống & hạnh phúc</a></li>
+              <li><a href="blog_title.html">Thơ & tản văn</a></li>
+              <li><a href="blog_title.html">Travel</a></li>
+              <li><a href="blog_title.html">Phỏng vấn & báo chí</a></li>
             </ul>
           </li>
         </ul>
@@ -144,7 +190,9 @@
           <i class="fas fa-times close"></i>
         </div>
         <div class="loginout__item">
-          <button>Đăng nhập / Đăng ký</button>
+          <a href="login.html">
+            <button>Đăng nhập / Đăng ký</button>
+          </a>
         </div>
       </div>
     </div>
