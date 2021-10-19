@@ -27,7 +27,7 @@ var fix_profile = document.getElementById('fix_profile')
 fix_profile.addEventListener('click', () => {
   tabb.forEach((index) => {
     index = 4
-    var panees = panee[index] 
+    var panees = panee[index]
     if (tabb[index].innerText === 'My Account') {
       var removeActive = document.querySelector('.tab-item-profile.active')
       var removePanne = document.querySelector('.tab-pane-profile.active')
@@ -89,34 +89,34 @@ logoutProfile.addEventListener('click', () => {
 })
 
 //Hiển thị thông báo
-window.onclick = function(event){
+window.onclick = function (event) {
   openCloseDropdown(event)
 }
 
-function closeAllDropdown(){
+function closeAllDropdown() {
   var dropdown = document.getElementsByClassName('dropdown-expend')
-  for (var i = 0 ; i < dropdown.length ; i++){
-      dropdown[i].classList.remove('dropdown-expend')
+  for (var i = 0; i < dropdown.length; i++) {
+    dropdown[i].classList.remove('dropdown-expend')
   }
 }
 
-function openCloseDropdown(event){
-  if(!event.target.matches('.dropdown-toggle')){
-      closeAllDropdown()
+function openCloseDropdown(event) {
+  if (!event.target.matches('.dropdown-toggle')) {
+    closeAllDropdown()
   }
-  else
-  {
-      var toggle = event.target.dataset.toggle
-      var content = document.getElementById(toggle)
-      if (content.classList.contains('dropdown-expend')){
-         closeAllDropdown()
-      }
-      else{
-          closeAllDropdown()
-          content.classList.add('dropdown-expend')
-      }
+  else {
+    var toggle = event.target.dataset.toggle
+    var content = document.getElementById(toggle)
+    if (content.classList.contains('dropdown-expend')) {
+      closeAllDropdown()
+    }
+    else {
+      closeAllDropdown()
+      content.classList.add('dropdown-expend')
+    }
   }
 }
+
 
 var url__update = document.getElementById('url__update')
 var updateUrl = document.querySelector('.update-url')
@@ -124,6 +124,16 @@ var closeUpdateUrl = document.getElementById('closeUpdateUrl')
 var confirm = document.getElementById('confirm')
 var closeprivate = document.getElementById('closeprivate')
 var privteConfirm = document.querySelector('.privte-confirm')
+var closeoutcourse = document.getElementById('closeoutcourse')
+var outcourseConfirm = document.querySelector('.outcourse-confirm')
+var openoutcourse = document.getElementById('openoutcourse')
+var leavecourse = document.getElementById('leavecourse')
+var leaveprivate = document.getElementById('leaveprivate')
+var leaveupdate = document.getElementById('leaveupdate')
+var deployConfirm = document.querySelector('.deploy-confirm')
+var deploy = document.getElementById('deploy')
+var leavedeploy = document.getElementById('leavedeploy')
+var closedeploy = document.getElementById('closedeploy')
 
 url__update.addEventListener('click', () => {
   updateUrl.classList.add('activeupdate')
@@ -133,10 +143,42 @@ closeUpdateUrl.addEventListener('click', () => {
   updateUrl.classList.remove('activeupdate')
 })
 
-confirm.addEventListener('click', function(){
+leaveupdate.addEventListener('click', () => {
+  updateUrl.classList.remove('activeupdate')
+})
+
+confirm.addEventListener('click', function () {
   privteConfirm.classList.add('activeconfirm')
 })
 
-closeprivate.addEventListener('click', function(){
+closeprivate.addEventListener('click', function () {
   privteConfirm.classList.remove('activeconfirm')
+})
+
+leaveprivate.addEventListener('click', function () {
+  privteConfirm.classList.remove('activeconfirm')
+})
+
+openoutcourse.addEventListener('click', () => {
+  outcourseConfirm.classList.add('activeoutconfrim')
+})
+
+closeoutcourse.addEventListener('click', () => {
+  outcourseConfirm.classList.remove('activeoutconfrim')
+})
+
+leavecourse.addEventListener('click', () => {
+  outcourseConfirm.classList.remove('activeoutconfrim')
+})
+
+deploy.addEventListener('click', () => {
+  deployConfirm.classList.add('activedeploy')
+})
+
+closedeploy.addEventListener('click', () => {
+  deployConfirm.classList.remove('activedeploy')
+})
+
+leavedeploy.addEventListener('click', () => {
+  deployConfirm.classList.remove('activedeploy')
 })

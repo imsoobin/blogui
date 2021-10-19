@@ -178,7 +178,7 @@
           <input type="text" value="https://www.nguyenphivan.com/profile/dangthuhuyen/profile">
         </div>
         <div class="update_btn">
-          <button>Hủy</button>
+          <button id="leaveupdate">Hủy</button>
           <button>Lưu</button>
         </div>
       </div>
@@ -199,8 +199,48 @@
           </p>
         </div>
         <div class="private_btn">
-          <button>Hủy</button>
+          <button id="leaveprivate">Hủy</button>
           <button>Xác nhận</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="outcourse-confirm">
+      <div class="outcourse_content">
+        <div class="outcourse_btnclose">
+          <div><i class="las la-times" id="closeoutcourse"></i></div>
+        </div>
+        <div class="outcourse_title">
+          <p>Thoát chương trình</p>
+        </div>
+        <div class="outcourse_des">
+          <p>
+            Tiến độ của bạn sẽ được lưu
+          </p>
+        </div>
+        <div class="outcourse_btn">
+          <button id="leavecourse">Hủy</button>
+          <button>Rời đi</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="deploy-confirm">
+      <div class="deploy_content">
+        <div class="deploy_btnclose">
+          <div><i class="las la-times" id="closedeploy"></i></div>
+        </div>
+        <div class="deploy_title">
+          <p>Hủy Blog Member ?</p>
+        </div>
+        <div class="deploy_des">
+          <p>
+            Nếu bạn hủy, bạn sẽ không có quyền truy cập vào gói và các quyền lợi của gói kể từ bây giờ
+          </p>
+        </div>
+        <div class="deploy_btn">
+          <button id="leavedeploy">Giữ lại</button>
+          <button>Đúng, hủy</button>
         </div>
       </div>
     </div>
@@ -359,10 +399,15 @@
                   <label for="">Giá:</label>
                   <span>Blog member</span><br />
                   <label for="">Thời lượng:</label>
-                  <span>Không giới hạn thời gian</span>
+                  <span>Không giới hạn thời gian</span><br>
+                  <p id="openoutcourse">
+                    Rời khỏi chương trình
+                  </p>
                 </div>
+                
               </div>
               <div class="linefile-bottom"></div>
+
               <div class="course__active">
                 <div>
                   <img src="../../IMG/course.png" alt="">
@@ -373,6 +418,9 @@
                   <span>Blog member</span><br />
                   <label for="">Thời lượng:</label>
                   <span>Không giới hạn thời gian</span>
+                  <p id="openoutcourse">
+                    Rời khỏi chương trình
+                  </p>
                 </div>
               </div>
               <div class="linefile-bottom"></div>
@@ -399,7 +447,7 @@
                 </label>
               </div>
               <div class="btn__cancel">
-                <a href="">Hủy gói đăng ký</a>
+                <span id="deploy">Hủy gói đăng ký</span>
               </div>
               <div class="linefile-bottom"></div>
             </div>
