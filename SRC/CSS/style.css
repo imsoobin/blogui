@@ -286,10 +286,10 @@ header .logo {
 }
 
 .bannerhome__content p {
-  text-align: start;
+  text-align: justify;
   line-height: 1.2;
-  font-size: 17px;
-  color: #222222;
+  font-size: 19px;
+  color: #555555;
 }
 
 .banner__img img {
@@ -474,7 +474,6 @@ header .logo {
   margin: 15px 20px 15px 20px;
   height: 35px;
   text-transform: uppercase;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .itemhome__post .item__text {
@@ -753,7 +752,7 @@ header .logo {
   background-color: #323232;
   margin: auto;
   position: relative;
-  top: 250px;
+  top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -774,7 +773,6 @@ header .logo {
   text-align: center;
   top: -40px;
   font-weight: 600;
-  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .share__icon img {
@@ -882,6 +880,7 @@ header .logo {
   cursor: pointer;
   padding: 0 0 0 3px;
 }
+
 
 .pagination {
   width: 100%;
@@ -1198,6 +1197,11 @@ header .logo {
 .dotsdt {
   position: relative;
   cursor: pointer;
+}
+.dotdel {
+  position: relative;
+  cursor: pointer;
+  font-size: 12px;
 }
 
 .sharedt {
@@ -1856,8 +1860,7 @@ input[type=file] {
 }
 
 .podcast_info span {
-  font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 46px;
 }
 
 .podcast_info p {
@@ -1869,16 +1872,11 @@ input[type=file] {
   font-size: 20px;
 }
 
-.banner__des p {
-  font-family: 'Times New Roman', Times, serif;
-}
-
 .banner__des, #more {
   padding: 20px 0;
   color: #fff;
   font-size: 20px;
   text-align: justify;
-  font-family: 'Times New Roman', Times, serif;
   line-height: 1.5;
 }
 
@@ -1991,7 +1989,6 @@ input[type=file] {
 
 .podcast_item .item_pod .pod_title {
   font-size: 28px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .date_realtime {
@@ -1999,13 +1996,11 @@ input[type=file] {
 }
 
 .date_realtime span {
-  font-family: 'Times New Roman', Times, serif;
   opacity: 0.5;
   font-size: 16px;
 }
 
 .podcast_des {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
   width: 100%;
   text-align: justify;
@@ -2056,8 +2051,7 @@ input[type=file] {
 }
 
 .bannerpcdt .podcast_info span {
-  font-size: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 47px;
 }
 
 .bannerpcdt .podcast_info p {
@@ -2233,7 +2227,6 @@ input[type=file] {
 .btn_event a {
   color: #fff;
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
 }
 
@@ -2247,6 +2240,12 @@ input[type=file] {
   color: #fff;
   margin: 0 auto;
 }
+.pod-dt{
+  width: auto;
+  height: auto;
+  color: #fff;
+  padding: 50px 50px;
+}
 
 .pod_curentime {
   padding: 50px 0 15px 0;
@@ -2255,7 +2254,6 @@ input[type=file] {
 
 .pod_curentime span {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .pod_des {
@@ -2263,8 +2261,7 @@ input[type=file] {
 }
 
 .pod_des p {
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
   line-height: 1.8;
   text-align: justify;
 }
@@ -2573,13 +2570,9 @@ input[type=file] {
 }
 
 .course__title h3 {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
 }
 
-.course__title p {
-  font-family: 'Times New Roman', Times, serif;
-}
 
 .line {
   border-bottom: 1px solid #fff;
@@ -2589,7 +2582,6 @@ input[type=file] {
 
 .course_member {
   color: #fff;
-  font-family: 'Times New Roman', Times, serif;
   margin-left: 32px;
   font-size: 17px;
 }
@@ -2604,7 +2596,6 @@ input[type=file] {
 .course__btn button {
   width: 100%;
   height: 40px;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
   background-color: #fff;
   outline: none;
@@ -2688,7 +2679,6 @@ input[type=file] {
   border-radius: 7px;
   margin: 0 0 15px 0;
   font-size: 16px;
-  font-family: 'Questrial', sans-serif;
 }
 
 .login__input input::placeholder {
@@ -2699,7 +2689,6 @@ input[type=file] {
 .forget__password {
   display: flex;
   justify-content: flex-end;
-  font-family: sans-serif;
   font-size: 15px;
 }
 
@@ -2931,19 +2920,25 @@ input[type=file] {
 
 /* course */
 
+.course_detail{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
 .main_center {
   margin-top: 90px;
   padding: 0 200px;
-  padding-bottom: 20px;
   display: flex;
   background: #323232;
   color: #fff;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .left_coursedt {
   height: auto;
   width: 35%;
-  border: 1px solid rgba(255, 255, 255, 0.7);
   border-top: none;
 }
 
@@ -2954,7 +2949,7 @@ input[type=file] {
 
 .left__mainTitle p {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  
 }
 
 .left__avaAdmin {
@@ -2974,7 +2969,6 @@ input[type=file] {
 .left__avaAdmin span {
   font-size: 16px;
   margin-left: 10px;
-  font-weight: 600;
 }
 
 .left__listTitle {
@@ -3006,9 +3000,12 @@ input[type=file] {
   color: #fff;
 }
 
-.left__listcourse a:hover .left__itemTitleCourse span {
-  opacity: 0.8;
+.left__listTitle .left__listcourse .left__list:hover{
+  background:rgba(255, 255, 255, 0.7);
 }
+/* .left__listcourse a:hover .left__itemTitleCourse span {
+  opacity: 0.8;
+} */
 
 .left__listcourse .left__list {
   display: none;
@@ -3072,13 +3069,16 @@ input[type=file] {
 }
 
 .left__listTitle .left__itemTitleCourse {
-  padding: 10px 20px 10px 20px;
+  margin: 10px 20px 10px 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: auto;
 }
-
+.left__listTitle .left__itemTitleCourse:hover{
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
 .left__listTitle .left__itemTitleCourse img {
   width: 35px;
   height: 35px;
@@ -3088,7 +3088,6 @@ input[type=file] {
 
 .left__listTitle .left__itemTitleCourse span {
   font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .left__bloglike .left__listlike {
@@ -3099,7 +3098,6 @@ input[type=file] {
   padding: 10px 20px 10px 20px;
   opacity: 0.7;
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .viewmoresame {
@@ -3160,10 +3158,8 @@ input[type=file] {
 }
 
 .right_coursedt {
-  width: 70%;
-  height: 610px;
-  border-right: 1px solid rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  width: 65%;
+  height: auto;
   overflow: auto;
 }
 
@@ -3216,7 +3212,6 @@ input[type=file] {
 }
 
 .course_info p, .course_info span, .course_info .iconSpotify {
-  font-family: 'Times New Roman', Times, serif;
   margin: 10px 0;
 }
 
@@ -3270,7 +3265,6 @@ input[type=file] {
 
 .info__name .follow p, .info__name .follow span {
   font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
   color: #323232;
 }
 
@@ -3282,7 +3276,6 @@ input[type=file] {
   color: #fff;
   border-radius: 10px;
   font-weight: 600;
-  font-family: sans-serif;
 }
 
 .viewInfo {
@@ -3359,7 +3352,6 @@ input[type=file] {
   text-align: center;
   top: -25px;
   color: #111;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .profile__icon {
@@ -3415,8 +3407,7 @@ input[type=file] {
 .tabs_profile {
   display: flex;
   position: relative;
-  justify-content: flex-start;
-  padding: 0px 30px 0 0px;
+  justify-content: space-between;
 }
 
 .tabs_profile .linepro {
@@ -3438,7 +3429,6 @@ input[type=file] {
   color: #fff;
   border-bottom: 4px solid transparent;
   cursor: pointer;
-  font-family: 'Times New Roman', Times, serif;
   transition: all 0.5s ease;
 }
 
@@ -3480,7 +3470,6 @@ input[type=file] {
 
 .name-titile {
   font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .btn_fix {
@@ -3515,7 +3504,6 @@ input[type=file] {
 
 .date-create p, .date-create span {
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .line-bottom {
@@ -3535,12 +3523,10 @@ input[type=file] {
 
 .profile_intro p {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
   margin-bottom: 10px;
 }
 
 .profile_intro span {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
 }
 
@@ -3560,7 +3546,6 @@ input[type=file] {
 .profile_intro textarea::placeholder {
   font-size: 17px;
   color: gray;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .link-emoji {
@@ -3615,7 +3600,6 @@ input[type=file] {
 
 .view_name span {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .huyhieu_info {
@@ -3637,7 +3621,6 @@ input[type=file] {
 
 .info_reader p {
   padding: 0 0 5px 0;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .file-title {
@@ -3647,12 +3630,10 @@ input[type=file] {
 }
 
 .file-title span {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 27px;
 }
 
 .file-title p {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 17px;
   margin: 20px 0;
 }
@@ -3698,7 +3679,6 @@ input[type=file] {
 
 .found-course .course__active div:last-child p {
   margin-bottom: 15px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .found-course .course__active div:last-child label {
@@ -3709,10 +3689,6 @@ input[type=file] {
   text-decoration: underline;
   cursor: pointer;
   margin-top: 10px;
-}
-
-.found-course .course__active div:last-child label, .found-course .course__active div:last-child span {
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .course__buy {
@@ -3728,11 +3704,6 @@ input[type=file] {
 .top__buy p {
   margin-right: 200px;
   width: 100px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.top__buy span {
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .center__buy {
@@ -3744,12 +3715,8 @@ input[type=file] {
 .center__buy label:first-child {
   margin-right: 200px;
   width: 100px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
-.center__buy span, .center__buy p {
-  font-family: 'Times New Roman', Times, serif;
-}
 
 .btn__cancel {
   margin-bottom: 20px;
@@ -3757,7 +3724,6 @@ input[type=file] {
 
 .btn__cancel span {
   color: #fff;
-  font-family: 'Times New Roman', Times, serif;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -3769,7 +3735,6 @@ input[type=file] {
 
 .name__show label {
   font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .name__show input {
@@ -3792,7 +3757,6 @@ input[type=file] {
 
 .form_update label {
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .left__update {
@@ -3829,7 +3793,6 @@ input[type=file] {
 
 .btn_update button {
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
   width: 90px;
   height: 35px;
   outline: none;
@@ -3855,7 +3818,6 @@ input[type=file] {
 
 .btn-update button {
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
   width: 90px;
   height: 35px;
   outline: none;
@@ -4141,10 +4103,6 @@ input[type=file] {
   font-size: 25px;
 }
 
-.update_title p {
-  font-family: 'Times New Roman', Times, serif;
-}
-
 .update_title i {
   cursor: pointer;
 }
@@ -4155,17 +4113,12 @@ input[type=file] {
   text-align: justify;
 }
 
-.update_des p {
-  font-family: 'Times New Roman', Times, serif;
-}
-
 .update_urlInput {
   padding: 20px 0;
 }
 
 .update_urlInput label {
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .update_urlInput input {
@@ -4184,7 +4137,6 @@ input[type=file] {
   width: 100px;
   height: 35px;
   margin-left: 10px;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
   cursor: pointer;
 }
@@ -4238,21 +4190,18 @@ input[type=file] {
 
 .private_title p {
   font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   padding: 0 0 30px 0;
 }
 
 .outcourse_title p {
   font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   padding: 0 0 30px 0;
 }
 
 .deploy_title p {
   font-size: 30px;
-  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   padding: 0 0 30px 0;
 }
@@ -4278,18 +4227,6 @@ input[type=file] {
   font-size: 15px;
 }
 
-.private_des p {
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.outcourse_des p {
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.deploy_des p {
-  font-family: 'Times New Roman', Times, serif;
-}
-
 .private_btn {
   text-align: center;
   margin: 30px 0 0 0;
@@ -4309,7 +4246,6 @@ input[type=file] {
   width: 120px;
   height: 35px;
   font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
   margin: 0 10px;
   cursor: pointer;
 }
@@ -4318,7 +4254,6 @@ input[type=file] {
   width: 120px;
   height: 35px;
   font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
   margin: 0 10px;
   cursor: pointer;
 }
@@ -4327,7 +4262,6 @@ input[type=file] {
   width: 120px;
   height: 35px;
   font-size: 15px;
-  font-family: 'Times New Roman', Times, serif;
   margin: 0 10px;
   cursor: pointer;
 }
@@ -4377,7 +4311,6 @@ input[type=file] {
 
 .setting_title h2 {
   font-size: 26px;
-  font-family: sans-serif;
 }
 
 .setting_title div {
@@ -4400,13 +4333,11 @@ input[type=file] {
 }
 
 .cancel_title h3 {
-  font-family: sans-serif;
   margin-bottom: 10px;
 }
 
 .cancel_title p {
   font-size: 14px;
-  font-family: sans-serif;
   opacity: 0.7;
 }
 
@@ -4414,7 +4345,6 @@ input[type=file] {
   width: 120px;
   height: 35px;
   font-size: 15px;
-  font-family: sans-serif;
   background: none;
   border: 1px solid #ae9a64;
   color: #ae9a64;
@@ -4432,10 +4362,6 @@ input[type=file] {
   margin-bottom: 10px;
 }
 
-.report_content h3, .report_content p {
-  font-family: sans-serif;
-}
-
 .report-checkbox {
   padding: 0 30px;
 }
@@ -4449,10 +4375,6 @@ input[type=file] {
 
 .checkbox_title h3 {
   margin-bottom: 10px;
-}
-
-.checkbox_title h3, .checkbox_title p {
-  font-family: sans-serif;
 }
 
 .checkbox_title p {
@@ -4509,12 +4431,10 @@ input[type="checkbox"].switch_1:checked:after {
 
 .note_title h2 {
   font-size: 29px;
-  font-family: sans-serif;
 }
 
 .note_title p {
   font-size: 17px;
-  font-family: sans-serif;
   cursor: pointer;
 }
 
@@ -4882,7 +4802,6 @@ input[type="checkbox"].switch_1:checked:after {
 
 .btn_chatbot span {
   font-size: 17px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .chat_mess {
@@ -4924,7 +4843,6 @@ input[type="checkbox"].switch_1:checked:after {
 
 .nameadmin p {
   font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .status i {
@@ -4934,7 +4852,6 @@ input[type="checkbox"].switch_1:checked:after {
 
 .status span {
   font-size: 14px;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .close_chat i {
@@ -4977,7 +4894,6 @@ input[type="checkbox"].switch_1:checked:after {
   border: none;
   font-size: 17px;
   resize: none;
-  font-family: 'Times New Roman', Times, serif;
   padding: 25px 10px;
 }
 
@@ -4988,3 +4904,44 @@ input[type="checkbox"].switch_1:checked:after {
   align-self: center;
   font-size: 20px;
 }
+.delcomment{
+  position: relative;
+}
+
+.delcomment .del{
+  position: absolute;
+  width: 50px;
+  top: -30px;
+  right: -60px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+}
+.delcomment .delpc{
+  position: absolute;
+  width: 50px;
+  top: -30px;
+  right: 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  cursor: pointer;
+  display: none;
+}
+
+.delcomment .del.opendel{
+  display: flex;
+}
+
+.delcomment .delpc.opendel{
+  display: flex;
+}
+

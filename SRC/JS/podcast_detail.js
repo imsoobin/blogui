@@ -5,6 +5,26 @@ function toggleMenu() {
   menu.classList.toggle('active');//Thêm thuộc tính toggle cho menu có tên là active
   open.classList.toggle('active');
 }
+
+var dell = document.querySelectorAll('.dotdel')
+for(var i =0 ; i < dell.length; i++){
+  dell[i].addEventListener('click', function(e){
+    var thiscmt = e.target
+    var delcmt = thiscmt.parentElement.parentElement.parentElement
+    var del = delcmt.querySelector('.delpc')
+    del.classList.toggle('opendel')
+  })
+}
+
+var dellspan = document.querySelectorAll('.delpc')
+for(var i =0; i < dellspan.length; i++){
+  dellspan[i].addEventListener('click', function(e){
+    var thisdel = e.target
+    var closedel = thisdel.parentElement
+    var clthis = closedel.querySelector('.delpc')
+    clthis.classList.remove('opendel')
+  })
+}
 /* --------------------------- Xử lý phần audio phát podcast -------------------------*/
 
 let $ = document.querySelector.bind(document)

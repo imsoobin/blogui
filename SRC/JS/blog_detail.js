@@ -5,6 +5,26 @@ function toggleMenu() {
   open.classList.toggle('active');
 }
 
+var dell = document.querySelectorAll('.dotdel')
+for(var i =0 ; i < dell.length; i++){
+  dell[i].addEventListener('click', function(e){
+    var thiscmt = e.target
+    var delcmt = thiscmt.parentElement.parentElement.parentElement
+    var del = delcmt.querySelector('.del')
+    del.classList.toggle('opendel')
+  })
+}
+
+var dellspan = document.querySelectorAll('.del')
+for(var i =0; i < dellspan.length; i++){
+  dellspan[i].addEventListener('click', function(e){
+    var thisdel = e.target
+    var closedel = thisdel.parentElement
+    var clthis = closedel.querySelector('.del')
+    clthis.classList.remove('opendel')
+  })
+}
+
 // Đóng mở input tìm kiếm khi có event
 var search = document.querySelector('.search')
 var inputSearch = document.querySelector('.inputSearch')
@@ -182,6 +202,7 @@ logoutProfile.addEventListener('click', () => {
   logout.classList.toggle('profiles')
 })
 
+
 //Hiển thị thông báo
 window.onclick = function(event){
   openCloseDropdown(event)
@@ -211,3 +232,4 @@ function openCloseDropdown(event){
       }
   }
 }
+
