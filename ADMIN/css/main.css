@@ -895,9 +895,27 @@ body {
   margin-right: 20px;
 }
 .right__tableWrapper ul li .content_note{
-  max-width: 250px;
-  max-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.right__tableWrapper ul li p{
+  width: 600px;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right__tableWrapper ul li:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.right__tableWrapper #limit{
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 380px) {

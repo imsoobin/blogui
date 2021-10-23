@@ -256,6 +256,10 @@ header .logo {
   color: #fff;
 }
 
+.logout ul li:hover a{
+  color: #0768ea;
+}
+
 .line-logout {
   border-bottom: 1px solid #fff;
 }
@@ -2937,7 +2941,7 @@ input[type=file] {
 }
 
 .left_coursedt {
-  height: auto;
+  height: 100vh;
   width: 35%;
   border-top: none;
 }
@@ -3667,6 +3671,10 @@ input[type=file] {
   height: auto;
 }
 
+.found-course .course__active:hover p:first-child{
+  opacity: 0.5;
+}
+
 .found-course img {
   width: 130px;
   height: 90px;
@@ -3864,6 +3872,10 @@ input[type=file] {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.dropdown-menu-item:hover{
+  opacity: 0.7;  
+}
+
 .dropdown-menu-link {
   display: flex;
   flex-direction: row;
@@ -3915,6 +3927,11 @@ input[type=file] {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   font-size: 16px;
+}
+
+.dropdown-menu-footer:hover{
+  color: #0768ea;
+  cursor: pointer;
 }
 
 .overlay-scrollbar::-webkit-scrollbar {
@@ -4454,6 +4471,11 @@ input[type="checkbox"].switch_1:checked:after {
   width: 100%;
 }
 
+.note_list ul li:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .note_list ul li img {
   height: 50px;
   width: 50px;
@@ -4461,13 +4483,16 @@ input[type="checkbox"].switch_1:checked:after {
   margin-right: 20px;
 }
 
-.note_list ul li .content_note {
+.note_list ul li .content_note{ 
+  display: flex;
+  align-items: center;
+}
+
+.note_list ul li p{
+  width: 500px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 300px;
-  display: flex;
-  align-items: center;
 }
 
 .out_publicProfile {
