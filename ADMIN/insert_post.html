@@ -77,46 +77,55 @@
                         <p class="right__desc">Insert post</p>
                         <div class="right__formWrapper">
                             <form action="" method="post" enctype="multipart/form-data">
-                                <div class="right__inputWrapper">
-                                    <label for="title">Title</label>
-                                    <input type="text" placeholder="Tiêu đề">
-                                </div>
-                                <div class="right__inputWrapper">
-                                    <label for="image">Image</label>
-                                    <input type="file">
-                                </div>
-                                <div class="right__inputWrapper">
-                                    <label for="image">Audio</label>
-                                    <input type="file" id="audio_name">
-                                </div>
-                                <div class="right__inputWrapper">
-                                    <label for="p_category">Category</label>
-                                    <select name="">
-                                        <option disabled selected>Select category</option>
-                                        <option value="">Dress</option>
-                                        <option value="">Top + Skert</option>
-                                    </select>
-                                </div>
-                                <div class="right__inputWrapper">
-                                    <label for="label">Course</label>
-                                    <select name="" id="courses_name">
+                                <div class="containdiv">
+                                    <div class="div">
+                                        <div class="right__inputWrapper">
+                                            <label for="title">Title</label>
+                                            <input type="text" placeholder="Tiêu đề">
+                                        </div>
+                                        <div class="right__inputWrapper">
+                                            <label for="image">Image</label>
+                                            <input type="file">
+                                        </div>
+                                        <div class="right__inputWrapper">
+                                            <label for="image">Audio</label>
+                                            <input type="file" id="audio_name">
+                                        </div>
 
-                                    </select>
+                                        <div class="right__inputWrapper">
+                                            <label for="desc">Content</label>
+                                            <textarea name="" id="" cols="30" rows="15"
+                                                placeholder="Write something..."></textarea>
+                                        </div>
+                                        <button class="btn" type="submit">ADD</button>
+                                    </div>
+
+                                    <div class="div">
+                                        <div class="right__inputWrapper">
+                                            <label for="p_category">Category</label>
+                                            <select name="">
+                                                <option disabled selected>Select category</option>
+                                                <option value="">Dress</option>
+                                                <option value="">Top + Skert</option>
+                                            </select>
+                                        </div>
+                                        <div class="right__inputWrapper">
+                                            <label for="label">Course</label>
+                                            <select name="" id="courses_name">
+
+                                            </select>
+                                        </div>
+                                        <div class="right__inputWrapper">
+                                            <label for="p_category">Rank</label>
+                                            <select name="">
+                                                <option disabled selected>Select rank</option>
+                                                <option value="">Dress</option>
+                                                <option value="">Top + Skert</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <div class="right__inputWrapper">
-                                    <label for="p_category">Rank</label>
-                                    <select name="">
-                                        <option disabled selected>Select rank</option>
-                                        <option value="">Dress</option>
-                                        <option value="">Top + Skert</option>
-                                    </select>
-                                </div>
-                                <div class="right__inputWrapper">
-                                    <label for="desc">Content</label>
-                                    <textarea name="" id="" cols="30" rows="10"
-                                        placeholder="Write something..."></textarea>
-                                </div>
-                                <button class="btn" type="submit">ADD</button>
                             </form>
                         </div>
                     </div>
@@ -128,7 +137,7 @@
     <script src="js/main.js"></script>
 </body>
 <script>
-    
+
 </script>
 
 </html>
