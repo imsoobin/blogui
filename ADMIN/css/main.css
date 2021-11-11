@@ -14,8 +14,7 @@
   outline: 0;
 }
 
-* input::-webkit-outer-spin-button,
-* input::-webkit-inner-spin-button {
+* input::-webkit-outer-spin-button, * input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -795,7 +794,6 @@ body {
 }
 
 .right__desc {
-  margin-bottom: 20px;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -881,37 +879,40 @@ body {
 .right__tableTitle {
   margin-bottom: 20px;
 }
-.right__tableWrapper ul li{
+
+.right__tableWrapper ul li {
   border-top: 1px solid rgba(16, 24, 47, 0.4);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 50px;
 }
-.right__tableWrapper ul li img{
+
+.right__tableWrapper ul li img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   margin-right: 20px;
 }
-.right__tableWrapper ul li .content_note{
+
+.right__tableWrapper ul li .content_note {
   display: flex;
   align-items: center;
 }
 
-.right__tableWrapper ul li p{
+.right__tableWrapper ul li p {
   width: 600px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.right__tableWrapper ul li:hover{
+.right__tableWrapper ul li:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
-.right__tableWrapper #limit{
+.right__tableWrapper #limit {
   max-width: 200px;
   white-space: nowrap;
   overflow: hidden;
@@ -1087,12 +1088,13 @@ body {
   width: 100%;
 }
 
-.right__formWrapper form .containdiv{
+.right__formWrapper form .containdiv {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.right__formWrapper form button{
+
+.right__formWrapper form button {
   width: 350px;
 }
 
@@ -1225,5 +1227,38 @@ body {
 
 .right__slideIcon img {
   width: 100%;
+}
+
+.right__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.right__inputSearch {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.right__inputSearch input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  padding: 5px 35px 5px 10px ;
+  position: relative;
+  width: auto;
+}
+
+.right__inputSearch i {
+  font-size: 20px;
+  transform: rotateY(180deg);
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.right__inputSearch i:hover{
+  color:#caa52a;
 }
 /*# sourceMappingURL=main.css.map */
